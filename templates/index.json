@@ -259,8 +259,8 @@
       "settings": {
         "link_label": "商品一覧へ",
         "link": "shopify://collections/all",
-        "type": "simple",
-        "arrow": "type-2",
+        "type": "3d",
+        "arrow": "type-1",
         "position": "center",
         "font_pc": 16,
         "font_sp": 14,
@@ -269,6 +269,13 @@
         "pd_pc": 1,
         "pd_sp": 1,
         "radius": 4,
+        "color_scheme": "scheme-2",
+        "c_txt": "#733700",
+        "c_bg": "#44c8d4",
+        "c_bd": "#f3f3f3",
+        "c_txt_h": "#733700",
+        "c_bg_h": "#47d5e2",
+        "c_bd_h": "#f3f3f3",
         "padding_top": 20,
         "padding_bottom": 20
       }
