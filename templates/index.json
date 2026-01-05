@@ -126,7 +126,7 @@
     "image_banner_Nq6YdM": {
       "type": "image-banner",
       "custom_css": [
-        "image{padding: 24px;}"
+        "img{padding: 24px;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
