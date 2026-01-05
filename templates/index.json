@@ -141,7 +141,7 @@
       "type": "featured-collection",
       "name": "人気商品",
       "settings": {
-        "collection": "スクイーズ",
+        "collection": "人気商品",
         "products_to_show": 24,
         "title": "人気商品",
         "heading_size": "h2",
@@ -199,7 +199,7 @@
       "type": "featured-collection",
       "name": "新商品",
       "settings": {
-        "collection": "スクイーズ",
+        "collection": "新商品",
         "products_to_show": 24,
         "title": "新商品",
         "heading_size": "h2",
@@ -228,7 +228,7 @@
       "type": "featured-collection",
       "name": "再入荷",
       "settings": {
-        "collection": "スクイーズ",
+        "collection": "再入荷",
         "products_to_show": 24,
         "title": "再入荷",
         "heading_size": "h2",
