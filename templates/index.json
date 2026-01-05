@@ -1,0 +1,201 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero-slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_pTxDJg": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/beautiful-cat.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_PT3rmh": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/a-cat-nibbles-on-blades-of-grass-outside.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "neko",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_PjGF3J": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "ランキング",
+            "heading_size": "h1",
+            "subheading": "ブランドのストーリーを画像で伝える",
+            "button_label": "ボタンのラベル",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide-0": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "送料関連",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "ボタンのラベル",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_AUt6gX": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "画像スライド",
+            "heading_size": "h1",
+            "subheading": "ブランドのストーリーを画像で伝える",
+            "button_label": "ボタンのラベル",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_pTxDJg",
+        "slide_PT3rmh",
+        "slide_PjGF3J",
+        "slide-0",
+        "slide_AUt6gX"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "ブランドについてのスライドショー"
+      }
+    },
+    "image_banner_Nq6YdM": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/payment.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "all-products": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "スクイーズ",
+        "products_to_show": 24,
+        "title": "人気商品",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "buttons_4AjX8g": {
+      "type": "buttons",
+      "name": "カスタムボタン",
+      "settings": {
+        "link_label": "商品一覧へ",
+        "link": "shopify://collections/all",
+        "type": "3d",
+        "arrow": "type-2",
+        "position": "center",
+        "font_pc": 16,
+        "font_sp": 14,
+        "width_pc": 30,
+        "width_sp": 80,
+        "pd_pc": 1,
+        "pd_sp": 1,
+        "radius": 4,
+        "c_txt": "#ffffff",
+        "c_bg": "#333333",
+        "c_bd": "#333333",
+        "c_txt_h": "#ffffff",
+        "c_bg_h": "#555555",
+        "c_bd_h": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "hero-slideshow",
+    "image_banner_Nq6YdM",
+    "all-products",
+    "buttons_4AjX8g"
+  ]
+}

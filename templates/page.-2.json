@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {text-align: center;}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_XQnR7a": {
+      "type": "custom-liquid",
+      "name": "ポップアップストア",
+      "settings": {
+        "custom_liquid": "<div class=\"popup-store-section\">\n  <h2 class=\"popup-store-title\">ポップアップストア</h2>\n  <div class=\"gmap-iframe-wrap\">\n    <iframe class=\"gmap-iframe\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.627135224153!2d139.8107004!3d35.7100627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1694072572128!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n  </div>\n</div>\n\n<style>\n.popup-store-section {\n  padding: 40px 0;\n}\n\n.popup-store-title {\n  text-align: center;\n  margin-bottom: 24px;\n  font-size: 24px;\n}\n\n.gmap-iframe-wrap {\n  text-align: center;\n}\n\n.gmap-iframe {\n  width: 60%;\n  height: 450px;\n}\n\n@media only screen and (max-width: 767px) {\n  .popup-store-title {\n    font-size: 20px;\n  }\n  \n  .gmap-iframe {\n    width: 85%;\n    height: 350px;\n  }\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "buttons_FXWRR8": {
+      "type": "buttons",
+      "name": "カスタムボタン",
+      "settings": {
+        "link_label": "取り扱いをご希望の方はこちら",
+        "link": "shopify://pages/contact",
+        "type": "simple",
+        "arrow": "type-1",
+        "position": "center",
+        "font_pc": 16,
+        "font_sp": 14,
+        "width_pc": 30,
+        "width_sp": 80,
+        "pd_pc": 1,
+        "pd_sp": 1,
+        "radius": 4,
+        "c_txt": "#ffffff",
+        "c_bg": "#333333",
+        "c_bd": "#333333",
+        "c_txt_h": "#ffffff",
+        "c_bg_h": "#555555",
+        "c_bd_h": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_MT8gar": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_694MHH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>キディランド</strong></p><p><strong>住所</strong></p><p><strong>営業時間</strong></p><p><strong>アクセス：</strong>OO駅から徒歩3分</p><p><strong>お支払い方法</strong>：</p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_694MHH"
+      ],
+      "name": "出店情報１",
+      "settings": {
+        "image": "shopify://shop_images/decorated-chinese-store-front.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_nCcBVM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kqwct4": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_hpmwHL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ビレッジヴァンガード</strong></p><p><strong>住所</strong></p><p><strong>営業時間</strong></p><p><strong>アクセス：</strong>OO駅から徒歩3分</p><p><strong>お支払い方法</strong>：</p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kqwct4",
+        "text_hpmwHL"
+      ],
+      "name": "出店情報２",
+      "settings": {
+        "image": "shopify://shop_images/light-bulbs-in-the-grocery-store.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_WYLzyx": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HwULxx": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_NKzc9e": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>トイザらス</strong></p><p><strong>住所</strong></p><p><strong>営業時間</strong></p><p><strong>アクセス：</strong>OO駅から徒歩3分</p><p><strong>お支払い方法</strong>：</p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HwULxx",
+        "text_NKzc9e"
+      ],
+      "name": "出店情報3",
+      "settings": {
+        "image": "shopify://shop_images/light-bulbs-in-the-grocery-store.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1767360306587cee52": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_XQnR7a",
+    "buttons_FXWRR8",
+    "image_with_text_MT8gar",
+    "image_with_text_nCcBVM",
+    "image_with_text_WYLzyx",
+    "1767360306587cee52"
+  ]
+}

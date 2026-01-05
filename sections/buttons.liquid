@@ -1,0 +1,313 @@
+{%- comment -%} sections/custom-button.liquid {%- endcomment -%}
+
+<div class="custom-button-section section-{{ section.id }}">
+  <div class="page-width">
+    <a href="{{ section.settings.link }}" class="custom-btn btn--{{ section.settings.type }}">
+      <span>{{ section.settings.link_label }}</span>
+      {%- if section.settings.arrow != 'none' -%}
+        <span class="btn-arrow btn-arrow--{{ section.settings.arrow }}"></span>
+      {%- endif -%}
+    </a>
+  </div>
+</div>
+
+{% style %}
+  .section-{{ section.id }} {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+  
+  .section-{{ section.id }} .page-width {
+    display: flex;
+    justify-content: {{ section.settings.position }};
+  }
+  
+  .section-{{ section.id }} .custom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: {{ section.settings.font_pc }}px;
+    width: {{ section.settings.width_pc }}%;
+    padding: {{ section.settings.pd_pc }}em 1.5em;
+    border-radius: {{ section.settings.radius }}px;
+    color: {{ section.settings.c_txt }};
+    background-color: {{ section.settings.c_bg }};
+    border: 2px solid {{ section.settings.c_bd }};
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .section-{{ section.id }} .custom-btn:hover {
+    color: {{ section.settings.c_txt_h }};
+    background-color: {{ section.settings.c_bg_h }};
+    border-color: {{ section.settings.c_bd_h }};
+  }
+  
+  /* 立体ボタン */
+  .section-{{ section.id }} .btn--3d {
+    box-shadow: 0 4px 0 {{ section.settings.c_bd }};
+    transform: translateY(0);
+  }
+  .section-{{ section.id }} .btn--3d:hover {
+    box-shadow: 0 2px 0 {{ section.settings.c_bd_h }};
+    transform: translateY(2px);
+  }
+  
+  /* 背景スライド */
+  .section-{{ section.id }} .btn--slide {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .section-{{ section.id }} .btn--slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: {{ section.settings.c_bg_h }};
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  .section-{{ section.id }} .btn--slide:hover::before {
+    left: 0;
+  }
+  
+  /* きらりと光る */
+  .section-{{ section.id }} .btn--shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .section-{{ section.id }} .btn--shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255,255,255,0.3);
+    transform: rotate(25deg);
+    transition: left 0.5s ease;
+  }
+  .section-{{ section.id }} .btn--shine:hover::after {
+    left: 120%;
+  }
+  
+  /* 矢印 */
+  .section-{{ section.id }} .btn-arrow--type-1::after {
+    content: '→';
+  }
+  .section-{{ section.id }} .btn-arrow--type-2::after {
+    content: '▶';
+    font-size: 0.7em;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .section-{{ section.id }} .custom-btn {
+      font-size: {{ section.settings.font_sp }}px;
+      width: {{ section.settings.width_sp }}%;
+      padding: {{ section.settings.pd_sp }}em 1.5em;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "カスタムボタン",
+  "class": "custom-button-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "ボタンテキスト",
+      "default": "詳しくはこちら"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "リンク先"
+    },
+    {
+      "type": "select",
+      "id": "type",
+      "label": "ボタンタイプ",
+      "options": [
+        { "value": "simple", "label": "シンプル" },
+        { "value": "3d", "label": "立体" },
+        { "value": "slide", "label": "背景スライド" },
+        { "value": "shine", "label": "きらりと光る" }
+      ],
+      "default": "simple"
+    },
+    {
+      "type": "select",
+      "id": "arrow",
+      "label": "矢印",
+      "options": [
+        { "value": "none", "label": "なし" },
+        { "value": "type-1", "label": "→" },
+        { "value": "type-2", "label": "▶" }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "配置",
+      "options": [
+        { "value": "flex-start", "label": "左寄せ" },
+        { "value": "center", "label": "中央" },
+        { "value": "flex-end", "label": "右寄せ" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "サイズ"
+    },
+    {
+      "type": "range",
+      "id": "font_pc",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "label": "文字サイズ（PC）",
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "font_sp",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "label": "文字サイズ（スマホ）",
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "width_pc",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "label": "横幅（PC）",
+      "default": 30,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "width_sp",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "label": "横幅（スマホ）",
+      "default": 80,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pd_pc",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.5,
+      "label": "高さ（PC）",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "pd_sp",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.5,
+      "label": "高さ（スマホ）",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "label": "角の丸み",
+      "default": 4,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "カラー"
+    },
+    {
+      "type": "color",
+      "id": "c_txt",
+      "label": "文字色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "c_bg",
+      "label": "背景色",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "c_bd",
+      "label": "枠線色",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "ホバー時カラー"
+    },
+    {
+      "type": "color",
+      "id": "c_txt_h",
+      "label": "文字色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "c_bg_h",
+      "label": "背景色",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "c_bd_h",
+      "label": "枠線色",
+      "default": "#555555"
+    },
+    {
+      "type": "header",
+      "content": "余白"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "上の余白",
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "下の余白",
+      "default": 20,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタムボタン"
+    }
+  ]
+}
+{% endschema %}
