@@ -165,6 +165,90 @@
         "padding_bottom": 24
       }
     },
+    "featured_collection_EKPx6z": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "スクイーズ",
+        "products_to_show": 24,
+        "title": "コラボ商品",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_gnKEKD": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "スクイーズ",
+        "products_to_show": 24,
+        "title": "新商品",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_L7fkYj": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "スクイーズ",
+        "products_to_show": 24,
+        "title": "再入荷",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "buttons_4AjX8g": {
       "type": "buttons",
       "name": "カスタムボタン",
@@ -196,6 +280,9 @@
     "hero-slideshow",
     "image_banner_Nq6YdM",
     "all-products",
+    "featured_collection_EKPx6z",
+    "featured_collection_gnKEKD",
+    "featured_collection_L7fkYj",
     "buttons_4AjX8g"
   ]
 }
