@@ -269,12 +269,6 @@
         "pd_pc": 1,
         "pd_sp": 1,
         "radius": 4,
-        "c_txt": "#ffffff",
-        "c_bg": "#44c8d4",
-        "c_bd": "#f3f3f3",
-        "c_txt_h": "#ffffff",
-        "c_bg_h": "#4ad3df",
-        "c_bd_h": "#ffffff",
         "padding_top": 20,
         "padding_bottom": 20
       }
