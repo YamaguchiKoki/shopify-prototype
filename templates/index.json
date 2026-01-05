@@ -138,7 +138,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
+        "image": "shopify://shop_images/pos-card-reader.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
