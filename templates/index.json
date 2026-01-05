@@ -12,11 +12,10 @@
     "hero-slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide_pTxDJg": {
+        "slide_PjGF3J": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/beautiful-cat.jpg",
+            "image": "shopify://shop_images/puffy-cloud.jpg",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -24,57 +23,21 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_PT3rmh": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/a-cat-nibbles-on-blades-of-grass-outside.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "neko",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_PjGF3J": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "ランキング",
-            "heading_size": "h1",
-            "subheading": "ブランドのストーリーを画像で伝える",
-            "button_label": "ボタンのラベル",
-            "link": "",
-            "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-2"
           }
         },
         "slide-0": {
           "type": "slide",
           "settings": {
             "image_overlay_opacity": 0,
-            "heading": "送料関連",
+            "heading": "",
             "heading_size": "h1",
             "subheading": "",
-            "button_label": "ボタンのラベル",
+            "button_label": "",
             "link": "shopify://collections",
             "button_style_secondary": false,
             "show_text_box": false,
@@ -88,10 +51,10 @@
           "type": "slide",
           "settings": {
             "image_overlay_opacity": 0,
-            "heading": "画像スライド",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "ブランドのストーリーを画像で伝える",
-            "button_label": "ボタンのラベル",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "show_text_box": true,
@@ -103,8 +66,6 @@
         }
       },
       "block_order": [
-        "slide_pTxDJg",
-        "slide_PT3rmh",
         "slide_PjGF3J",
         "slide-0",
         "slide_AUt6gX"
@@ -126,11 +87,11 @@
     "image_banner_Nq6YdM": {
       "type": "image-banner",
       "custom_css": [
-        "img {padding: 24px}"
+        "img {padding: 24px;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/payment.webp",
+        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "image_behavior": "none",
