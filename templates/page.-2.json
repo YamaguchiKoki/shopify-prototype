@@ -16,7 +16,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0
       }
     },
@@ -48,11 +48,11 @@
         "radius": 4,
         "color_scheme": "",
         "c_txt": "#ffffff",
-        "c_bg": "#333333",
-        "c_bd": "#333333",
+        "c_bg": "#adcdd0",
+        "c_bd": "#f3f3f3",
         "c_txt_h": "#ffffff",
-        "c_bg_h": "#555555",
-        "c_bd_h": "#555555",
+        "c_bg_h": "#bcdfe2",
+        "c_bd_h": "#f3f3f3",
         "padding_top": 20,
         "padding_bottom": 20
       }
