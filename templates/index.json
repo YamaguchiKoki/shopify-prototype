@@ -139,6 +139,7 @@
     },
     "all-products": {
       "type": "featured-collection",
+      "name": "人気商品",
       "settings": {
         "collection": "スクイーズ",
         "products_to_show": 24,
@@ -167,13 +168,14 @@
     },
     "featured_collection_EKPx6z": {
       "type": "featured-collection",
+      "name": "コラボ商品",
       "settings": {
-        "collection": "スクイーズ",
+        "collection": "コラボ商品",
         "products_to_show": 24,
         "title": "コラボ商品",
         "heading_size": "h2",
         "description": "",
-        "show_description": true,
+        "show_description": false,
         "description_style": "subtitle",
         "columns_desktop": 6,
         "enable_desktop_slider": false,
@@ -195,6 +197,7 @@
     },
     "featured_collection_gnKEKD": {
       "type": "featured-collection",
+      "name": "新商品",
       "settings": {
         "collection": "スクイーズ",
         "products_to_show": 24,
@@ -223,6 +226,7 @@
     },
     "featured_collection_L7fkYj": {
       "type": "featured-collection",
+      "name": "再入荷",
       "settings": {
         "collection": "スクイーズ",
         "products_to_show": 24,
