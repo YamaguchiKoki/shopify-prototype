@@ -129,6 +129,7 @@
       "settings": {
         "image": "shopify://shop_images/payment.webp",
         "image_overlay_opacity": 0,
+        "banner_width": "narrow",
         "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
