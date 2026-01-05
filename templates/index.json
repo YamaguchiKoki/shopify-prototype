@@ -110,7 +110,7 @@
         "slide_AUt6gX"
       ],
       "custom_css": [
-        "div {margin-top: 24px;}"
+        "div {margin-top: 24px; border: none;}"
       ],
       "settings": {
         "layout": "grid",
