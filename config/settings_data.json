@@ -150,10 +150,10 @@
           "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#733700",
-          "button": "#b0d8da",
+          "button": "#adcdd0",
           "button_label": "#733700",
-          "secondary_button_label": "#b0d8da",
-          "shadow": "#b0d8da"
+          "secondary_button_label": "#adcdd0",
+          "shadow": "#adcdd0"
         }
       },
       "scheme-3": {

@@ -271,10 +271,10 @@
         "radius": 4,
         "color_scheme": "scheme-2",
         "c_txt": "#733700",
-        "c_bg": "#44c8d4",
+        "c_bg": "#adcdd0",
         "c_bd": "#f3f3f3",
         "c_txt_h": "#733700",
-        "c_bg_h": "#47d5e2",
+        "c_bg_h": "#c0e2e6",
         "c_bd_h": "#f3f3f3",
         "padding_top": 20,
         "padding_bottom": 20
