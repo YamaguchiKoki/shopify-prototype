@@ -31,26 +31,26 @@
     width: {{ section.settings.width_pc }}%;
     padding: {{ section.settings.pd_pc }}em 1.5em;
     border-radius: {{ section.settings.radius }}px;
-    color: rgba(var(--color-foreground), 1);
-    background-color: rgba(var(--color-button), 1);
-    border: 2px solid rgba(var(--color-button), 1);
+    color: {{ section.settings.c_txt }};
+    background-color: {{ section.settings.c_bg }};
+    border: 2px solid {{ section.settings.c_bd }};
     transition: all 0.3s ease;
     cursor: pointer;
   }
 
   .section-{{ section.id }} .custom-btn:hover {
-    color: rgba(var(--color-button), 1);
-    background-color: transparent;
-    border-color: rgba(var(--color-button), 1);
+    color: {{ section.settings.c_txt_h }};
+    background-color: {{ section.settings.c_bg_h }};
+    border-color: {{ section.settings.c_bd_h }};
   }
 
   /* 立体ボタン */
   .section-{{ section.id }} .btn--3d {
-    box-shadow: 0 4px 0 rgba(var(--color-foreground), 0.3);
+    box-shadow: 0 4px 0 {{ section.settings.c_bd }};
     transform: translateY(0);
   }
   .section-{{ section.id }} .btn--3d:hover {
-    box-shadow: 0 2px 0 rgba(var(--color-foreground), 0.3);
+    box-shadow: 0 2px 0 {{ section.settings.c_bd_h }};
     transform: translateY(2px);
   }
 
@@ -67,7 +67,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(var(--color-foreground), 1);
+    background-color: {{ section.settings.c_bg_h }};
     transition: left 0.3s ease;
     z-index: -1;
   }
@@ -237,13 +237,57 @@
     },
     {
       "type": "header",
-      "content": "配色"
+      "content": "セクション配色"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "配色",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "ボタンカラー"
+    },
+    {
+      "type": "color",
+      "id": "c_txt",
+      "label": "文字色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "c_bg",
+      "label": "背景色",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "c_bd",
+      "label": "枠線色",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "ホバー時カラー"
+    },
+    {
+      "type": "color",
+      "id": "c_txt_h",
+      "label": "文字色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "c_bg_h",
+      "label": "背景色",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "c_bd_h",
+      "label": "枠線色",
+      "default": "#555555"
     },
     {
       "type": "header",
