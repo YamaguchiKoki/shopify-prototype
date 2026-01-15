@@ -12,69 +12,14 @@
     "hero-slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide_pTxDJg": {
+        "slide-0": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/beautiful-cat.jpg",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_PT3rmh": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/a-cat-nibbles-on-blades-of-grass-outside.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "neko",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_PjGF3J": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "ランキング",
-            "heading_size": "h1",
-            "subheading": "ブランドのストーリーを画像で伝える",
-            "button_label": "ボタンのラベル",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide-0": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "送料関連",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "ボタンのラベル",
             "link": "shopify://collections",
             "button_style_secondary": false,
             "show_text_box": false,
@@ -84,30 +29,45 @@
             "color_scheme": "scheme-1"
           }
         },
-        "slide_AUt6gX": {
+        "slide_N3Gxpq": {
           "type": "slide",
           "settings": {
             "image_overlay_opacity": 0,
-            "heading": "画像スライド",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "ブランドのストーリーを画像で伝える",
-            "button_label": "ボタンのラベル",
-            "link": "",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections",
             "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_8UyG7T": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "left",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
-        "slide_pTxDJg",
-        "slide_PT3rmh",
-        "slide_PjGF3J",
         "slide-0",
-        "slide_AUt6gX"
+        "slide_N3Gxpq",
+        "slide_8UyG7T"
       ],
       "custom_css": [
         "div {margin-top: 24px; border: none;}"
@@ -125,14 +85,14 @@
     },
     "image_banner_Nq6YdM": {
       "type": "image-banner",
+      "disabled": true,
       "custom_css": [
-        "div {padding: 24px;}"
+        "img {padding: 36px;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/payment.webp",
+        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
         "image_overlay_opacity": 0,
-        "banner_width": "full",
         "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -142,6 +102,55 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "image_with_text_6wPdfT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EdkDV8": {
+          "type": "heading",
+          "settings": {
+            "heading": "お支払い方法",
+            "heading_size": "h1"
+          }
+        },
+        "text_AmjTRQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>クレジットカード</h3><ul><li>VISA</li><li>Mastercard</li><li>JCB</li><li>American Express</li></ul><h3>電子マネー</h3><ul><li>iD</li><li>QUICPay</li><li>交通系</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_JzVgUj": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "ボタンのラベル",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EdkDV8",
+        "text_AmjTRQ",
+        "button_JzVgUj"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/pos-card-reader.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "all-products": {
@@ -162,7 +171,7 @@
         "view_all_style": "solid",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
-        "image_shape": "blob",
+        "image_shape": "rounded",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
@@ -291,6 +300,7 @@
   "order": [
     "hero-slideshow",
     "image_banner_Nq6YdM",
+    "image_with_text_6wPdfT",
     "all-products",
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
