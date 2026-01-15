@@ -561,6 +561,14 @@
     clip-path: ellipse(47% 47% at 50% 50%);
   }
 
+  .product-card-wrapper .shape--rounded {
+    transition: clip-path var(--duration-long) ease;
+  }
+
+  .product-card-wrapper:hover .shape--rounded {
+    clip-path: inset(0% round 7%);
+  }
+
   .product-card-wrapper .shape--blob {
     transition: clip-path var(--duration-long) ease-in-out;
   }

@@ -445,6 +445,9 @@
         "options__8": {
           "label": "Round"
         },
+        "options__9": {
+          "label": "Rounded"
+        },
         "label": "Image shape"
       }
     },
