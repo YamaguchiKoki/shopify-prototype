@@ -75,6 +75,35 @@
   margin-bottom: 1rem;
 }
 
+/* Title wrapper with link - header position for "View all" button */
+.title-wrapper--with-link {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title-wrapper-with-link__title {
+  flex: 1;
+}
+
+.title-wrapper--with-link a {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .title-wrapper--with-link {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .title-wrapper--with-link a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {
     margin-bottom: 2.5rem;
