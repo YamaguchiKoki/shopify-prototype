@@ -78,7 +78,7 @@
 /* Title wrapper with link - header position for "View all" button */
 .title-wrapper--with-link {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
 }
