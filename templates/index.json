@@ -28,9 +28,9 @@
       ],
       "name": "Video Grid - Background",
       "settings": {
-        "heading": "Featured Videos",
+        "heading": "",
         "heading_size": "h1",
-        "columns_desktop": 2,
+        "columns_desktop": 1,
         "columns_mobile": "1",
         "grid_gap": 32,
         "full_width": false,
