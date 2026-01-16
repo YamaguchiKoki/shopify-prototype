@@ -9,6 +9,36 @@
  */
 {
   "sections": {
+    "video_grid_jEabEN": {
+      "type": "video-grid",
+      "blocks": {
+        "video_E3hwrX": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "description": "",
+            "video_url": "https://youtu.be/XthjMMot3Qk?si=_4zSO-WmnJSZLICX",
+            "immersive_mode": true,
+            "enable_video_looping": true
+          }
+        }
+      },
+      "block_order": [
+        "video_E3hwrX"
+      ],
+      "name": "Video Grid - Background",
+      "settings": {
+        "heading": "Featured Videos",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "grid_gap": 32,
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "hero-slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -84,21 +114,6 @@
         "accessibility_info": "ブランドについてのスライドショー"
       }
     },
-    "video_MBRBE6": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "動画",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner_Nq6YdM": {
       "type": "image-banner",
       "disabled": true,
@@ -136,6 +151,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "view_all_position": "below",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "rounded",
@@ -165,6 +181,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "view_all_position": "below",
         "color_scheme": "scheme-4319a484-5a14-44ce-b28e-ce57b101323f",
         "image_ratio": "adapt",
         "image_shape": "rounded",
@@ -194,6 +211,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "view_all_position": "below",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "rounded",
@@ -223,6 +241,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "view_all_position": "below",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "rounded",
@@ -314,8 +333,8 @@
     }
   },
   "order": [
+    "video_grid_jEabEN",
     "hero-slideshow",
-    "video_MBRBE6",
     "image_banner_Nq6YdM",
     "all-products",
     "featured_collection_EKPx6z",
