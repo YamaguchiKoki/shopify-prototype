@@ -98,7 +98,7 @@
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};{% if section.settings.view_all_border_radius != '0' %} --border-opacity: 0; --buttons-border-width: 0;{% endif %}"{% endif %}
+          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};{% if section.settings.view_all_border_radius != '0' %} --border-opacity: 0;{% endif %}"{% endif %}
         >
           {{ 'sections.featured_collection.view_all' | t }}
         </a>
@@ -216,7 +216,7 @@
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};{% if section.settings.view_all_border_radius != '0' %} --border-opacity: 0; --buttons-border-width: 0;{% endif %}"{% endif %}
+          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};{% if section.settings.view_all_border_radius != '0' %} --border-opacity: 0;{% endif %}"{% endif %}
         >
           {{ 'sections.featured_collection.view_all' | t }}
         </a>
