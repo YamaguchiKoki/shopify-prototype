@@ -1,0 +1,418 @@
+{{ 'video-grid.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .video-grid--{{ section.id }} {
+    gap: {{ section.settings.grid_gap | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .video-grid--{{ section.id }} {
+      gap: {{ section.settings.grid_gap }}px;
+      grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="video-grid-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="video-grid video-grid--{{ section.id }} video-grid--{{ section.settings.columns_mobile }}-col-mobile">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign video_id = block.settings.video.id | default: block.settings.video_url.id
+            assign video_alt = block.settings.video.alt | default: block.settings.description
+            assign poster = block.settings.video.preview_image | default: block.settings.cover_image
+
+            if block.settings.video != null
+              assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+              if ratio_diff < 0.01 and ratio_diff > 0
+                assign fix_ratio = true
+              endif
+            endif
+
+            assign use_immersive_mode = false
+            if block.settings.immersive_mode
+              assign use_immersive_mode = true
+            endif
+          -%}
+
+          <div class="video-grid-item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if use_immersive_mode %} video-grid-item--immersive{% endif %}" {{ block.shopify_attributes }}>
+            {%- unless block.settings.title == blank -%}
+              <h3 class="video-grid-item__title h4">{{ block.settings.title }}</h3>
+            {%- endunless -%}
+
+            {%- if use_immersive_mode -%}
+              {%- comment -%} Immersive Mode - No poster, auto-play background video {%- endcomment -%}
+              <div class="video-grid-item__media-immersive">
+                {%- if block.settings.video == null and block.settings.video_url != null -%}
+                  {%- liquid
+                    assign loop = ''
+                    if block.settings.enable_video_looping
+                      assign loop = '&loop=1&playlist=' | append: video_id
+                    endif
+                  -%}
+                  {%- if block.settings.video_url.type == 'youtube' -%}
+                    <iframe
+                      src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1&mute=1{{ loop }}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+                      class="js-youtube video-grid-item__iframe"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                      title="{{ block.settings.description | escape }}"
+                    ></iframe>
+                  {%- else -%}
+                    <iframe
+                      src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1&muted=1{{ loop }}&background=1&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1"
+                      class="js-vimeo video-grid-item__iframe"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                      title="{{ block.settings.description | escape }}"
+                    ></iframe>
+                  {%- endif -%}
+                {%- else -%}
+                  {{
+                    block.settings.video
+                    | video_tag:
+                      image_size: '1100x',
+                      autoplay: true,
+                      loop: block.settings.enable_video_looping,
+                      controls: false,
+                      muted: true,
+                      playsinline: true,
+                      class: 'video-grid-item__video'
+                  }}
+                {%- endif -%}
+              </div>
+            {%- else -%}
+              {%- comment -%} Standard Mode - With poster and play button {%- endcomment -%}
+              <deferred-media
+                class="video-grid-item__media deferred-media gradient{% if fix_ratio %} media-fit-cover{% endif %}"
+                data-media-id="{{ video_id }}"
+                {% if poster != null %}
+                  style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+                {% endif %}
+              >
+                <button
+                  id="Deferred-Poster-{{ block.id }}"
+                  class="video-grid-item__poster media deferred-media__poster media--landscape"
+                  type="button"
+                  aria-label="動画を再生"
+                >
+                  {%- if poster != null -%}
+                    {{
+                      poster
+                      | image_url: width: 1500
+                      | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw', widths: '375, 750, 1100, 1500', alt: video_alt
+                    }}
+                  {%- else -%}
+                    {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                  {%- endif -%}
+                  <span class="deferred-media__poster-button motion-reduce">
+                    <span class="svg-wrapper">
+                      {{- 'icon-play.svg' | inline_asset_content -}}
+                    </span>
+                  </span>
+                </button>
+                <template>
+                  {%- if block.settings.video == null and block.settings.video_url != null -%}
+                    {%- liquid
+                      assign loop = ''
+                      if block.settings.enable_video_looping
+                        assign loop = '&loop=1&playlist=' | append: video_id
+                      endif
+                    -%}
+                    {%- if block.settings.video_url.type == 'youtube' -%}
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ block.settings.description | escape }}"
+                      ></iframe>
+                    {%- else -%}
+                      <iframe
+                        src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                        class="js-vimeo"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ block.settings.description | escape }}"
+                      ></iframe>
+                    {%- endif -%}
+                  {%- else -%}
+                    {{
+                      block.settings.video
+                      | video_tag:
+                        image_size: '1100x',
+                        autoplay: true,
+                        loop: block.settings.enable_video_looping,
+                        controls: true,
+                        muted: false
+                    }}
+                  {%- endif -%}
+                </template>
+              </deferred-media>
+            {%- endif -%}
+
+            {%- unless block.settings.description == blank -%}
+              <div class="video-grid-item__description rte">
+                {{ block.settings.description }}
+              </div>
+            {%- endunless -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="video-grid-placeholder">
+        <p>ブロックを追加して動画を表示してください</p>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Video Grid",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "見出し",
+      "default": "Videos"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra extra large"
+        }
+      ],
+      "default": "h1",
+      "label": "見出しサイズ"
+    },
+    {
+      "type": "header",
+      "content": "グリッド設定"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2,
+      "label": "デスクトップの列数"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1列"
+        },
+        {
+          "value": "2",
+          "label": "2列"
+        }
+      ],
+      "default": "1",
+      "label": "モバイルの列数"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "動画間の余白",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "レイアウト設定"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "全幅表示",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "カラースキーム",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "セクションパディング"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "上部パディング",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "下部パディング",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "タイトル",
+          "default": ""
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "説明",
+          "default": ""
+        },
+        {
+          "type": "header",
+          "content": "動画ソース"
+        },
+        {
+          "type": "paragraph",
+          "content": "Shopifyにアップロードした動画、またはYouTube/VimeoのURLを使用できます"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Shopify動画をアップロード"
+        },
+        {
+          "type": "header",
+          "content": "または外部動画URL"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "label": "YouTube または Vimeo URL",
+          "info": "上の「Shopify動画をアップロード」が優先されます"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "カバー画像",
+          "info": "通常モードで使用。臨場感モードでは使用されません。"
+        },
+        {
+          "type": "header",
+          "content": "動画設定"
+        },
+        {
+          "type": "checkbox",
+          "id": "immersive_mode",
+          "label": "臨場感モード（背景動画）",
+          "default": false,
+          "info": "自動再生・ループ・ミュートで、UIなしの没入体験。シークバーやコントロールが完全に非表示になります。"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "ループ再生",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Grid",
+      "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "name": "Video Grid - 臨場感",
+      "settings": {
+        "heading": "Featured Videos",
+        "columns_desktop": 2,
+        "grid_gap": 32
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "immersive_mode": true,
+            "enable_video_looping": true
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "immersive_mode": true,
+            "enable_video_looping": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
