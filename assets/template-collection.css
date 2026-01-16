@@ -126,3 +126,8 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+/* Button with custom border radius - remove default border */
+.button--no-border:after {
+  box-shadow: none !important;
+}
