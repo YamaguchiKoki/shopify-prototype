@@ -69,6 +69,7 @@
         "slide_N3Gxpq",
         "slide_8UyG7T"
       ],
+      "disabled": true,
       "custom_css": [
         "div {margin-top: 24px; border: none;}"
       ],
@@ -81,6 +82,21 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "ブランドについてのスライドショー"
+      }
+    },
+    "video_MBRBE6": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "動画",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_banner_Nq6YdM": {
@@ -299,12 +315,13 @@
   },
   "order": [
     "hero-slideshow",
+    "video_MBRBE6",
     "image_banner_Nq6YdM",
-    "image_with_text_6wPdfT",
     "all-products",
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
-    "buttons_4AjX8g"
+    "buttons_4AjX8g",
+    "image_with_text_6wPdfT"
   ]
 }
