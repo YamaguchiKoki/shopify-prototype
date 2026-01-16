@@ -96,7 +96,7 @@
       {%- if section.settings.show_view_all and more_in_collection and section.settings.view_all_position == 'header' -%}
         <a
           href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}{% if section.settings.view_all_style != 'link' and section.settings.view_all_border_radius != '0' %} button--no-border{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}{% if section.settings.view_all_style == 'solid' and section.settings.view_all_border_radius != '0' %} button--no-border{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
           {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};"{% endif %}
         >
@@ -214,7 +214,7 @@
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}{% if section.settings.view_all_style != 'link' and section.settings.view_all_border_radius != '0' %} button--no-border{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}{% if section.settings.view_all_style == 'solid' and section.settings.view_all_border_radius != '0' %} button--no-border{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
           {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};"{% endif %}
         >
