@@ -98,6 +98,7 @@
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};"{% endif %}
         >
           {{ 'sections.featured_collection.view_all' | t }}
         </a>
@@ -215,6 +216,7 @@
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+          {% if section.settings.view_all_style != 'link' %}style="border-radius: {{ section.settings.view_all_border_radius }};"{% endif %}
         >
           {{ 'sections.featured_collection.view_all' | t }}
         </a>
@@ -386,7 +388,35 @@
       ],
       "default": "below",
       "info": "見出しと同じ列を選択すると、見出しとボタンが横並びで表示されます"
-    }, 
+    },
+    {
+      "type": "select",
+      "id": "view_all_border_radius",
+      "label": "「すべてを表示」ボタンの角丸",
+      "options": [
+        {
+          "value": "0",
+          "label": "角丸なし"
+        },
+        {
+          "value": "4px",
+          "label": "少し丸い"
+        },
+        {
+          "value": "8px",
+          "label": "丸い（デフォルト）"
+        },
+        {
+          "value": "16px",
+          "label": "とても丸い"
+        },
+        {
+          "value": "50px",
+          "label": "完全に丸い（ピル型）"
+        }
+      ],
+      "default": "8px"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
