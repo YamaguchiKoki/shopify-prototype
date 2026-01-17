@@ -285,6 +285,22 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "image_banner_XPH4hm": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -295,6 +311,7 @@
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
-    "buttons_4AjX8g"
+    "buttons_4AjX8g",
+    "image_banner_XPH4hm"
   ]
 }
