@@ -1,0 +1,143 @@
+.map-with-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map-with-image--full-width {
+  max-width: 100%;
+}
+
+.map-with-image--reverse {
+  direction: rtl;
+}
+
+.map-with-image--reverse > * {
+  direction: ltr;
+}
+
+/* Height variants */
+.map-with-image--height-small {
+  min-height: 40rem;
+}
+
+.map-with-image--height-medium {
+  min-height: 55rem;
+}
+
+.map-with-image--height-large {
+  min-height: 70rem;
+}
+
+/* Map */
+.map-with-image__map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-with-image__map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map-with-image__map-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+  max-width: none !important;
+}
+
+.map-with-image__map-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(var(--color-foreground), 0.04);
+}
+
+.map-with-image__map-placeholder svg {
+  width: 6rem;
+  height: 6rem;
+  fill: rgba(var(--color-foreground), 0.2);
+}
+
+.map-with-image__map-placeholder p {
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.5);
+  font-size: 1.4rem;
+}
+
+/* Image */
+.map-with-image__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-with-image__image-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map-with-image__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.map-with-image__image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--color-foreground), 0.04);
+}
+
+.map-with-image__image-placeholder svg {
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+  fill: rgba(var(--color-foreground), 0.2);
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .map-with-image {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .map-with-image--height-small {
+    min-height: 60rem;
+  }
+
+  .map-with-image--height-medium {
+    min-height: 80rem;
+  }
+
+  .map-with-image--height-large {
+    min-height: 100rem;
+  }
+
+  .map-with-image--reverse {
+    direction: ltr;
+  }
+
+  .map-with-image--reverse .map-with-image__map {
+    order: 2;
+  }
+
+  .map-with-image--reverse .map-with-image__image {
+    order: 1;
+  }
+}
