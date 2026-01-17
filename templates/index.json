@@ -305,6 +305,10 @@
       "type": "map-with-image",
       "name": "Map with Image",
       "settings": {
+        "heading": "出店情報",
+        "heading_size": "h1",
+        "subheading": "",
+        "text_alignment": "left",
         "map_url": "<div class=\"popup-store-section\">\n  <h2 class=\"popup-store-title\">ポップアップストア</h2>\n  <div class=\"gmap-iframe-wrap\">\n    <iframe class=\"gmap-iframe\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.627135224153!2d139.8107004!3d35.7100627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1694072572128!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n  </div>\n</div>\n\n<style>\n.popup-store-section {\n  padding: 40px 0;\n}\n\n.popup-store-title {\n  text-align: center;\n  margin-bottom: 24px;\n  font-size: 24px;\n}\n\n.gmap-iframe-wrap {\n  text-align: center;\n}\n\n.gmap-iframe {\n  width: 60%;\n  height: 450px;\n}\n\n@media only screen and (max-width: 767px) {\n  .popup-store-title {\n    font-size: 20px;\n  }\n  \n  .gmap-iframe {\n    width: 85%;\n    height: 350px;\n  }\n}\n</style>",
         "image": "shopify://shop_images/puffy-cloud.jpg",
         "layout": "image_first",
