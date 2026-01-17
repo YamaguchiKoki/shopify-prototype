@@ -270,7 +270,7 @@
       "name": "Heading with Image",
       "settings": {
         "heading": "支払い方法",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
         "image_height": "medium",
