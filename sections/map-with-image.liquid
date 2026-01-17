@@ -20,6 +20,21 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   <div class="{% if section.settings.full_width %}map-with-image--full-width{% else %}page-width{% endif %}">
+    {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+      <div class="map-with-image__header map-with-image__header--{{ section.settings.text_alignment }}">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="map-with-image__heading inline-richtext {{ section.settings.heading_size }}">
+            {{ section.settings.heading }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <div class="map-with-image__subheading rte">
+            {{ section.settings.subheading }}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
     <div class="map-with-image map-with-image-{{ section.id }} map-with-image--height-{{ section.settings.height }}{% if section.settings.layout == 'image_first' %} map-with-image--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
       {%- comment -%} Google Map {%- endcomment -%}
@@ -85,6 +100,56 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "見出し"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "小"
+        },
+        {
+          "value": "h1",
+          "label": "中"
+        },
+        {
+          "value": "h0",
+          "label": "大"
+        }
+      ],
+      "default": "h1",
+      "label": "見出しサイズ"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "サブテキスト"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "左"
+        },
+        {
+          "value": "center",
+          "label": "中央"
+        },
+        {
+          "value": "right",
+          "label": "右"
+        }
+      ],
+      "default": "center",
+      "label": "テキスト配置"
+    },
     {
       "type": "html",
       "id": "map_url",
