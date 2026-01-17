@@ -305,7 +305,7 @@
     "image_banner_XPH4hm": {
       "type": "image-banner",
       "custom_css": [
-        "img {padding: 16px}"
+        "img {padding: 16px;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
