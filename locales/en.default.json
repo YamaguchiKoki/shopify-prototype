@@ -538,5 +538,33 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "customer_accounts": {
+    "subscriptions": {
+      "subscription_contracts": {
+        "title": "Use payment methods for recurring orders",
+        "subscription_contracts_updated": "{{succeeded}} subscriptions out of { {{total}} were renewed",
+        "product_details": "Product specifications",
+        "load_more": "Load more",
+        "more_items": {
+          "one": "Over {{count}} items",
+          "other": "Over {{count}} items"
+        },
+        "product_count": {
+          "one": "{{count}} items",
+          "other": "{{count}} items"
+        }
+      },
+      "contracts_update_failed": "Some subscription renewals failed",
+      "updating_contracts": {
+        "one": "Renewing {{count}} subscriptions...",
+        "other": "Renewing {{count}} subscriptions..."
+      },
+      "contracts_updated": {
+        "one": "{{count}} subscriptions successfully renewed",
+        "other": "{{count}} subscriptions successfully renewed"
+      },
+      "invalid_wallet_type_error": "Invalid wallet type."
+    }
   }
 }
