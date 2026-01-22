@@ -319,6 +319,38 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "category_filter_grid_K4yWPm": {
+      "type": "category-filter-grid",
+      "blocks": {
+        "category_ygif76": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "metafield_type": "zodiac",
+            "filter_value": "双子座"
+          }
+        }
+      },
+      "block_order": [
+        "category_ygif76"
+      ],
+      "name": "t:sections.category-filter-grid.presets.name",
+      "settings": {
+        "title": "星座",
+        "heading_size": "h1",
+        "description": "",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -331,6 +363,7 @@
     "buttons_4AjX8g",
     "heading_with_image_PX4WWY",
     "image_banner_Nq6YdM",
-    "map_with_image_EiweJk"
+    "map_with_image_EiweJk",
+    "category_filter_grid_K4yWPm"
   ]
 }
