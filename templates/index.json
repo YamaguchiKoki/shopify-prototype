@@ -154,7 +154,7 @@
             "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "トイザらス",
             "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
-            "link_label": "",
+            "link_label": "コラボ商品一覧へ",
             "link": ""
           }
         },
@@ -164,7 +164,7 @@
             "image": "shopify://shop_images/ski-resort-crowd.jpg",
             "title": "ヴィレッジヴァンガード",
             "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
-            "link_label": "",
+            "link_label": "コラボ商品一覧へ",
             "link": ""
           }
         },
@@ -174,7 +174,7 @@
             "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "title": "コラボ",
             "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
-            "link_label": "",
+            "link_label": "コラボ商品一覧へ",
             "link": "/collections/all?filter.p.m.custom.zodiac=獅子座"
           }
         }
@@ -195,7 +195,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "",
+        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
