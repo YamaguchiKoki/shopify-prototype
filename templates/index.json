@@ -273,6 +273,7 @@
         "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
+        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
         "image_height": "medium",
         "image_behavior": "none",
         "full_width": false,
@@ -283,6 +284,7 @@
     },
     "image_banner_Nq6YdM": {
       "type": "image-banner",
+      "disabled": true,
       "custom_css": [
         "img {padding: 108px;}"
       ],
@@ -319,6 +321,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_HP7h63": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NKaxcy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "title": "双子座",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7yVi6n": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Bmr8JT": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NKaxcy",
+        "column_7yVi6n",
+        "column_Bmr8JT"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "星座",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "ボタンのラベル",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -331,6 +388,7 @@
     "buttons_4AjX8g",
     "heading_with_image_PX4WWY",
     "image_banner_Nq6YdM",
-    "map_with_image_EiweJk"
+    "map_with_image_EiweJk",
+    "multicolumn_HP7h63"
   ]
 }
