@@ -113,7 +113,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.category-filter-grid.name",
+  "name": "Category Filter Grid",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -124,7 +124,7 @@
       "type": "inline_richtext",
       "id": "title",
       "default": "Category Filter",
-      "label": "t:sections.category-filter-grid.settings.title.label"
+      "label": "Section heading"
     },
     {
       "type": "select",
@@ -157,11 +157,11 @@
     {
       "type": "richtext",
       "id": "description",
-      "label": "t:sections.category-filter-grid.settings.description.label"
+      "label": "Description"
     },
     {
       "type": "header",
-      "content": "t:sections.category-filter-grid.settings.header_grid.content"
+      "content": "Grid settings"
     },
     {
       "type": "range",
@@ -170,18 +170,18 @@
       "max": 6,
       "step": 1,
       "default": 4,
-      "label": "t:sections.category-filter-grid.settings.columns_desktop.label"
+      "label": "Desktop columns"
     },
     {
       "type": "checkbox",
       "id": "enable_desktop_slider",
-      "label": "t:sections.category-filter-grid.settings.enable_desktop_slider.label",
+      "label": "Enable desktop slider",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "full_width",
-      "label": "t:sections.category-filter-grid.settings.full_width.label",
+      "label": "Full width",
       "default": false
     },
     {
@@ -193,7 +193,7 @@
     },
     {
       "type": "header",
-      "content": "t:sections.category-filter-grid.settings.header_image.content"
+      "content": "Image"
     },
     {
       "type": "select",
@@ -201,37 +201,37 @@
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.category-filter-grid.settings.image_ratio.options__1.label"
+          "label": "Adapt to image"
         },
         {
           "value": "portrait",
-          "label": "t:sections.category-filter-grid.settings.image_ratio.options__2.label"
+          "label": "Portrait"
         },
         {
           "value": "square",
-          "label": "t:sections.category-filter-grid.settings.image_ratio.options__3.label"
+          "label": "Square"
         }
       ],
       "default": "adapt",
-      "label": "t:sections.category-filter-grid.settings.image_ratio.label"
+      "label": "Image ratio"
     },
     {
       "type": "header",
-      "content": "t:sections.category-filter-grid.settings.header_mobile.content"
+      "content": "Mobile"
     },
     {
       "type": "select",
       "id": "columns_mobile",
       "default": "2",
-      "label": "t:sections.category-filter-grid.settings.columns_mobile.label",
+      "label": "Mobile columns",
       "options": [
         {
           "value": "1",
-          "label": "t:sections.category-filter-grid.settings.columns_mobile.options__1.label"
+          "label": "1"
         },
         {
           "value": "2",
-          "label": "t:sections.category-filter-grid.settings.columns_mobile.options__2.label"
+          "label": "2"
         }
       ]
     },
@@ -239,7 +239,7 @@
       "type": "checkbox",
       "id": "swipe_on_mobile",
       "default": false,
-      "label": "t:sections.category-filter-grid.settings.swipe_on_mobile.label"
+      "label": "Enable swipe on mobile"
     },
     {
       "type": "header",
@@ -269,31 +269,31 @@
   "blocks": [
     {
       "type": "category",
-      "name": "t:sections.category-filter-grid.blocks.category.name",
+      "name": "Category",
       "settings": [
         {
           "type": "text",
           "id": "category_name",
-          "label": "t:sections.category-filter-grid.blocks.category.settings.category_name.label",
+          "label": "Category name",
           "default": "Category Name"
         },
         {
           "type": "image_picker",
           "id": "category_image",
-          "label": "t:sections.category-filter-grid.blocks.category.settings.category_image.label"
+          "label": "Category image"
         },
         {
           "type": "select",
           "id": "metafield_type",
-          "label": "t:sections.category-filter-grid.blocks.category.settings.metafield_type.label",
+          "label": "Metafield type",
           "options": [
             {
               "value": "zodiac",
-              "label": "t:sections.category-filter-grid.blocks.category.settings.metafield_type.options__1.label"
+              "label": "Zodiac"
             },
             {
               "value": "collaboration_type",
-              "label": "t:sections.category-filter-grid.blocks.category.settings.metafield_type.options__2.label"
+              "label": "Collaboration"
             }
           ],
           "default": "zodiac"
@@ -301,15 +301,15 @@
         {
           "type": "text",
           "id": "filter_value",
-          "label": "t:sections.category-filter-grid.blocks.category.settings.filter_value.label",
-          "info": "t:sections.category-filter-grid.blocks.category.settings.filter_value.info"
+          "label": "Filter value",
+          "info": "Enter the exact metafield value (e.g., 獅子座)"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.category-filter-grid.presets.name",
+      "name": "Category Filter Grid",
       "blocks": [
         {
           "type": "category"
