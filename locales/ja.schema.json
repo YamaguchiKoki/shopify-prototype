@@ -3406,6 +3406,150 @@
       "presets": {
         "name": "迅速な注文リスト"
       }
+    },
+    "heading-with-image": {
+      "name": "見出しと画像",
+      "settings": {
+        "heading": {
+          "label": "見出し"
+        },
+        "heading_size": {
+          "label": "見出しサイズ",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中"
+          },
+          "options__3": {
+            "label": "大"
+          }
+        },
+        "subheading": {
+          "label": "サブテキスト"
+        },
+        "text_alignment": {
+          "label": "テキスト配置",
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "中央"
+          },
+          "options__3": {
+            "label": "右"
+          }
+        },
+        "image": {
+          "label": "画像"
+        },
+        "image_height": {
+          "label": "画像の高さ",
+          "options__1": {
+            "label": "画像に合わせる"
+          },
+          "options__2": {
+            "label": "小"
+          },
+          "options__3": {
+            "label": "中"
+          },
+          "options__4": {
+            "label": "大"
+          }
+        },
+        "image_behavior": {
+          "label": "画像エフェクト",
+          "info": "ホバー時の動作",
+          "options__1": {
+            "label": "なし"
+          },
+          "options__2": {
+            "label": "アンビエント"
+          },
+          "options__3": {
+            "label": "ズームイン"
+          }
+        },
+        "full_width": {
+          "label": "全幅表示"
+        }
+      },
+      "presets": {
+        "name": "見出しと画像"
+      }
+    },
+    "map-with-image": {
+      "name": "地図と画像",
+      "settings": {
+        "heading": {
+          "label": "見出し"
+        },
+        "heading_size": {
+          "label": "見出しサイズ",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中"
+          },
+          "options__3": {
+            "label": "大"
+          }
+        },
+        "subheading": {
+          "label": "サブテキスト"
+        },
+        "text_alignment": {
+          "label": "テキスト配置",
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "中央"
+          },
+          "options__3": {
+            "label": "右"
+          }
+        },
+        "map_url": {
+          "label": "Google Map 埋め込みコード",
+          "info": "Google Mapの「共有」→「地図を埋め込む」からiframeコードをコピーして貼り付けてください"
+        },
+        "image": {
+          "label": "画像"
+        },
+        "layout": {
+          "label": "レイアウト",
+          "options__1": {
+            "label": "マップを左に配置"
+          },
+          "options__2": {
+            "label": "画像を左に配置"
+          }
+        },
+        "height": {
+          "label": "高さ",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中"
+          },
+          "options__3": {
+            "label": "大"
+          }
+        },
+        "gap": {
+          "label": "マップと画像の距離"
+        },
+        "full_width": {
+          "label": "全幅表示"
+        }
+      },
+      "presets": {
+        "name": "地図と画像"
+      }
     }
   }
 }
