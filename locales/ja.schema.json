@@ -3550,6 +3550,91 @@
       "presets": {
         "name": "地図と画像"
       }
+    },
+    "category-filter-grid": {
+      "name": "カテゴリーフィルターグリッド",
+      "settings": {
+        "title": {
+          "label": "セクション見出し"
+        },
+        "heading_size": {
+          "label": "見出しサイズ"
+        },
+        "description": {
+          "label": "説明"
+        },
+        "header_grid": {
+          "content": "グリッド設定"
+        },
+        "columns_desktop": {
+          "label": "デスクトップのカラム数"
+        },
+        "enable_desktop_slider": {
+          "label": "デスクトップでスライダーを有効にする"
+        },
+        "full_width": {
+          "label": "全幅表示"
+        },
+        "header_image": {
+          "content": "画像"
+        },
+        "image_ratio": {
+          "label": "画像の比率",
+          "options__1": {
+            "label": "自動調整"
+          },
+          "options__2": {
+            "label": "縦長"
+          },
+          "options__3": {
+            "label": "正方形"
+          }
+        },
+        "header_mobile": {
+          "content": "モバイル設定"
+        },
+        "columns_mobile": {
+          "label": "モバイルのカラム数",
+          "options__1": {
+            "label": "1"
+          },
+          "options__2": {
+            "label": "2"
+          }
+        },
+        "swipe_on_mobile": {
+          "label": "モバイルでスワイプを有効にする"
+        }
+      },
+      "blocks": {
+        "category": {
+          "name": "カテゴリー",
+          "settings": {
+            "category_name": {
+              "label": "カテゴリー名"
+            },
+            "category_image": {
+              "label": "カテゴリー画像"
+            },
+            "metafield_type": {
+              "label": "メタフィールドタイプ",
+              "options__1": {
+                "label": "星座"
+              },
+              "options__2": {
+                "label": "コラボレーション"
+              }
+            },
+            "filter_value": {
+              "label": "フィルター値",
+              "info": "メタフィールドの正確な値を入力してください（例: 獅子座）"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "カテゴリーフィルターグリッド"
+      }
     }
   }
 }

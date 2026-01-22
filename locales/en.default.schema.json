@@ -3571,6 +3571,91 @@
       "presets": {
         "name": "Map with Image"
       }
+    },
+    "category-filter-grid": {
+      "name": "Category Filter Grid",
+      "settings": {
+        "title": {
+          "label": "Section heading"
+        },
+        "heading_size": {
+          "label": "Heading size"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "header_grid": {
+          "content": "Grid settings"
+        },
+        "columns_desktop": {
+          "label": "Number of columns on desktop"
+        },
+        "enable_desktop_slider": {
+          "label": "Enable desktop slider"
+        },
+        "full_width": {
+          "label": "Full width"
+        },
+        "header_image": {
+          "content": "Image"
+        },
+        "image_ratio": {
+          "label": "Image ratio",
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "header_mobile": {
+          "content": "Mobile settings"
+        },
+        "columns_mobile": {
+          "label": "Number of columns on mobile",
+          "options__1": {
+            "label": "1"
+          },
+          "options__2": {
+            "label": "2"
+          }
+        },
+        "swipe_on_mobile": {
+          "label": "Enable swipe on mobile"
+        }
+      },
+      "blocks": {
+        "category": {
+          "name": "Category",
+          "settings": {
+            "category_name": {
+              "label": "Category name"
+            },
+            "category_image": {
+              "label": "Category image"
+            },
+            "metafield_type": {
+              "label": "Metafield type",
+              "options__1": {
+                "label": "Zodiac"
+              },
+              "options__2": {
+                "label": "Collaboration"
+              }
+            },
+            "filter_value": {
+              "label": "Filter value",
+              "info": "Enter the exact metafield value for filtering (e.g., Leo)"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Category Filter Grid"
+      }
     }
   }
 }

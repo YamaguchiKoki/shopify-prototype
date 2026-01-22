@@ -3568,6 +3568,91 @@
       "presets": {
         "name": "地图与图片"
       }
+    },
+    "category-filter-grid": {
+      "name": "分类筛选网格",
+      "settings": {
+        "title": {
+          "label": "板块标题"
+        },
+        "heading_size": {
+          "label": "标题大小"
+        },
+        "description": {
+          "label": "描述"
+        },
+        "header_grid": {
+          "content": "网格设置"
+        },
+        "columns_desktop": {
+          "label": "桌面列数"
+        },
+        "enable_desktop_slider": {
+          "label": "启用桌面滑块"
+        },
+        "full_width": {
+          "label": "全宽显示"
+        },
+        "header_image": {
+          "content": "图片"
+        },
+        "image_ratio": {
+          "label": "图片比例",
+          "options__1": {
+            "label": "自适应图片"
+          },
+          "options__2": {
+            "label": "纵向"
+          },
+          "options__3": {
+            "label": "正方形"
+          }
+        },
+        "header_mobile": {
+          "content": "移动设备设置"
+        },
+        "columns_mobile": {
+          "label": "移动设备列数",
+          "options__1": {
+            "label": "1"
+          },
+          "options__2": {
+            "label": "2"
+          }
+        },
+        "swipe_on_mobile": {
+          "label": "启用移动设备滑动"
+        }
+      },
+      "blocks": {
+        "category": {
+          "name": "分类",
+          "settings": {
+            "category_name": {
+              "label": "分类名称"
+            },
+            "category_image": {
+              "label": "分类图片"
+            },
+            "metafield_type": {
+              "label": "元字段类型",
+              "options__1": {
+                "label": "星座"
+              },
+              "options__2": {
+                "label": "合作伙伴"
+              }
+            },
+            "filter_value": {
+              "label": "筛选值",
+              "info": "输入用于筛选的确切元字段值（例如：狮子座）"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "分类筛选网格"
+      }
     }
   }
 }

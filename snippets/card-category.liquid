@@ -1,0 +1,88 @@
+{% comment %}
+  Renders a category filter card
+
+  Accepts:
+  - category_name: {String} Display name for the category
+  - category_image: {Object} Image object for the category
+  - metafield_type: {String} Type of metafield ('zodiac' or 'collaboration_type')
+  - filter_value: {String} Exact metafield value for filtering
+  - media_aspect_ratio: {String} Image aspect ratio ('adapt', 'portrait', or 'square')
+
+  Usage:
+  {% render 'card-category',
+    category_name: block.settings.category_name,
+    category_image: block.settings.category_image,
+    metafield_type: block.settings.metafield_type,
+    filter_value: block.settings.filter_value,
+    media_aspect_ratio: section.settings.image_ratio
+  %}
+{% endcomment %}
+
+{%- liquid
+  assign metafield_key = ''
+  if metafield_type == 'zodiac'
+    assign metafield_key = 'custom.zodiac'
+  elsif metafield_type == 'collaboration_type'
+    assign metafield_key = 'custom.collaboration_type'
+  endif
+
+  assign filter_url = '/collections/all?filter.p.m.' | append: metafield_key | append: '=' | append: filter_value | url_encode
+
+  assign ratio = 1
+  if category_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif category_image and media_aspect_ratio == 'adapt'
+    assign ratio = category_image.aspect_ratio
+  endif
+
+  if ratio == 0 or ratio == nil
+    assign ratio = 1
+  endif
+-%}
+
+<div class="card-wrapper animate-arrow">
+  <a
+    href="{{ filter_url }}"
+    class="card card--standard card--media"
+    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+  >
+    <div
+      class="card__inner color-{{ settings.card_color_scheme }} gradient ratio"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+    >
+      {%- if category_image != blank -%}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            <img
+              srcset="
+                {%- if category_image.width >= 165 -%}{{ category_image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if category_image.width >= 360 -%}{{ category_image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if category_image.width >= 533 -%}{{ category_image | image_url: width: 533 }} 533w,{%- endif -%}
+                {%- if category_image.width >= 720 -%}{{ category_image | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if category_image.width >= 940 -%}{{ category_image | image_url: width: 940 }} 940w,{%- endif -%}
+                {%- if category_image.width >= 1066 -%}{{ category_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                {{ category_image | image_url }} {{ category_image.width }}w
+              "
+              src="{{ category_image | image_url: width: 533 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+              alt="{{ category_image.alt | escape }}"
+              class="motion-reduce"
+              loading="lazy"
+              width="{{ category_image.width }}"
+              height="{{ category_image.height }}"
+            >
+          </div>
+        </div>
+      {%- endif -%}
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading">
+            <span class="full-unstyled-link">
+              {{ category_name }}
+            </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
