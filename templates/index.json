@@ -145,8 +145,66 @@
         "padding_bottom": 24
       }
     },
+    "multicolumn_K4imfJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VeqRda": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
+            "title": "トイザらス",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_P4wGfX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ski-resort-crowd.jpg",
+            "title": "ヴィレッジヴァンガード",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KPMdLU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "title": "コラボ",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": "/collections/all?filter.p.m.custom.zodiac=獅子座"
+          }
+        }
+      },
+      "block_order": [
+        "column_VeqRda",
+        "column_P4wGfX",
+        "column_KPMdLU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "コラボ商品",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "shopify://collections/all",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_EKPx6z": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "コラボ商品",
       "settings": {
         "collection": "コラボ商品",
@@ -270,7 +328,7 @@
       "name": "Heading with Image",
       "settings": {
         "heading": "支払い方法",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "subheading": "",
         "text_alignment": "left",
         "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
@@ -287,7 +345,7 @@
       "name": "Map with Image",
       "settings": {
         "heading": "出店情報",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "subheading": "",
         "text_alignment": "left",
         "map_url": "<div class=\"popup-store-section\">\n  <h2 class=\"popup-store-title\">ポップアップストア</h2>\n  <div class=\"gmap-iframe-wrap\">\n    <iframe class=\"gmap-iframe\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.627135224153!2d139.8107004!3d35.7100627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1694072572128!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n  </div>\n</div>\n\n<style>\n.popup-store-section {\n  padding: 40px 0;\n}\n\n.popup-store-title {\n  text-align: center;\n  margin-bottom: 24px;\n  font-size: 24px;\n}\n\n.gmap-iframe-wrap {\n  text-align: center;\n}\n\n.gmap-iframe {\n  width: 60%;\n  height: 450px;\n}\n\n@media only screen and (max-width: 767px) {\n  .popup-store-title {\n    font-size: 20px;\n  }\n  \n  .gmap-iframe {\n    width: 85%;\n    height: 350px;\n  }\n}\n</style>",
@@ -306,6 +364,7 @@
     "video_grid_jEabEN",
     "hero-slideshow",
     "all-products",
+    "multicolumn_K4imfJ",
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
