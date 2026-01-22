@@ -538,5 +538,13 @@
       "expanded": "礼品卡收件人表单已展开",
       "collapsed": "礼品卡收件人表单已折叠"
     }
+  },
+  "menu": {
+    "home": "首页",
+    "products": "产品",
+    "collections": "系列",
+    "contact": "联系我们",
+    "about": "关于我们",
+    "cart": "购物车"
   }
 }

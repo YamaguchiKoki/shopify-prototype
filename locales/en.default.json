@@ -538,5 +538,13 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "menu": {
+    "home": "Home",
+    "products": "Products",
+    "collections": "Collections",
+    "contact": "Contact",
+    "about": "About",
+    "cart": "Cart"
   }
 }
