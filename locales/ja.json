@@ -382,6 +382,9 @@
       "min_error": "このアイテムの最小値は{{ min }}です",
       "max_error": "このアイテムの最大値は{{ max }}です",
       "step_error": "このアイテムは、{{ step }}の増分でのみ追加できます"
+    },
+    "map_with_image": {
+      "map_placeholder": "Google Mapを埋め込んでください"
     }
   },
   "localization": {
