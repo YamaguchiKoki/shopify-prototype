@@ -153,7 +153,7 @@
           "settings": {
             "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "トイザらス",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "コラボ商品一覧へ",
             "link": ""
           }
@@ -163,7 +163,7 @@
           "settings": {
             "image": "shopify://shop_images/ski-resort-crowd.jpg",
             "title": "ヴィレッジヴァンガード",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "コラボ商品一覧へ",
             "link": ""
           }
@@ -173,7 +173,7 @@
           "settings": {
             "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "title": "コラボ",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "コラボ商品一覧へ",
             "link": "/collections/all?filter.p.m.custom.zodiac=獅子座"
           }
