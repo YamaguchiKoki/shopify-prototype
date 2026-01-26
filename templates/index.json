@@ -155,7 +155,7 @@
             "title": "トイザらス",
             "text": "",
             "link_label": "コラボ商品一覧へ",
-            "link": ""
+            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=トイザらス"
           }
         },
         "column_P4wGfX": {
@@ -165,7 +165,7 @@
             "title": "ヴィレッジヴァンガード",
             "text": "",
             "link_label": "コラボ商品一覧へ",
-            "link": ""
+            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=ヴィレッジヴァンガード"
           }
         },
         "column_KPMdLU": {
