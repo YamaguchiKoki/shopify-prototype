@@ -17,7 +17,8 @@
           "settings": {
             "title": "",
             "description": "",
-            "video_url": "https://youtu.be/XthjMMot3Qk?si=_4zSO-WmnJSZLICX",
+            "video": "shopify://files/videos/19700121_2029_6976d7ebd67c8191ad7f2dfdb7578982.mp4",
+            "video_url": "",
             "immersive_mode": true,
             "enable_video_looping": true
           }
