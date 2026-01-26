@@ -145,6 +145,61 @@
         "padding_bottom": 24
       }
     },
+    "multicolumn_ipF6T4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xzRcTq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
+            "title": "トイザらス",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "コラボ商品一覧へ",
+            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=トイザらス"
+          }
+        },
+        "column_6NK6tV": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ijWAYt": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_xzRcTq",
+        "column_6NK6tV",
+        "column_ijWAYt"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "コラボ商品",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_EKPx6z": {
       "type": "featured-collection",
       "name": "コラボ商品",
@@ -325,6 +380,7 @@
     "video_grid_jEabEN",
     "hero-slideshow",
     "all-products",
+    "multicolumn_ipF6T4",
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
