@@ -162,10 +162,10 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ski-resort-crowd.jpg",
-            "title": "ヴィレッジヴァンガード",
+            "title": "キディランド",
             "text": "",
             "link_label": "コラボ商品一覧へ",
-            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=ヴィレッジヴァンガード"
+            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=キディランド"
           }
         },
         "column_KPMdLU": {
