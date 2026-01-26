@@ -145,97 +145,9 @@
     },
     "content_for_index": [],
     "color_schemes": {
-      "scheme-2": {
+      "scheme-62857740-ef7a-45ec-ad98-d903a64439a6": {
         "settings": {
           "background": "#f7f7f7",
-          "background_gradient": "",
-          "text": "#733700",
-          "button": "#adcdd0",
-          "button_label": "#733700",
-          "secondary_button_label": "#adcdd0",
-          "shadow": "#adcdd0"
-        }
-      },
-      "scheme-3": {
-        "settings": {
-          "background": "#242833",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4": {
-        "settings": {
-          "background": "#121212",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-5": {
-        "settings": {
-          "background": "#334fb4",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-72aeaa05-392e-430e-a2d5-cec7f8a849c4": {
-        "settings": {
-          "background": "#adcdd0",
-          "background_gradient": "",
-          "text": "#733700",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4e4c0391-b475-4afd-9e3b-9519986f9200": {
-        "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-610e2fd6-c17f-4595-b604-4309294f74ed": {
-        "settings": {
-          "background": "#f1627e",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#adcdd0",
-          "button_label": "#733700",
-          "secondary_button_label": "#adcdd0",
-          "shadow": "#adcdd0"
-        }
-      },
-      "scheme-4319a484-5a14-44ce-b28e-ce57b101323f": {
-        "settings": {
-          "background": "#f7f7f7",
-          "background_gradient": "",
-          "text": "#733700",
-          "button": "#adcdd0",
-          "button_label": "#733700",
-          "secondary_button_label": "#adcdd0",
-          "shadow": "#adcdd0"
-        }
-      },
-      "scheme-e29e672f-db82-46c1-b2a9-be056c29e5c6": {
-        "settings": {
-          "background": "#f1627e",
           "background_gradient": "",
           "text": "#733700",
           "button": "#f1627e",
@@ -244,9 +156,9 @@
           "shadow": "#f1627e"
         }
       },
-      "scheme-62857740-ef7a-45ec-ad98-d903a64439a6": {
+      "scheme-0e20d14a-8bc4-4523-a0c6-f2acd17738d5": {
         "settings": {
-          "background": "#f7f7f7",
+          "background": "#f1627e",
           "background_gradient": "",
           "text": "#733700",
           "button": "#f1627e",
