@@ -350,7 +350,7 @@
       "name": "ポップアップ",
       "settings": {
         "enable_popup": true,
-        "show_once": true,
+        "show_once": false,
         "popup_image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
         "popup_link": "",
         "popup_delay": 1000,
