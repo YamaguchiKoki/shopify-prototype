@@ -291,6 +291,23 @@
         "padding_bottom": 20
       }
     },
+    "heading_with_image_Dkrg9e": {
+      "type": "heading-with-image",
+      "name": "Heading with Image",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "subheading": "",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/2024__1705541084866.jpg",
+        "image_height": "small",
+        "image_behavior": "none",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "heading_with_image_PX4WWY": {
       "type": "heading-with-image",
       "name": "Heading with Image",
@@ -348,6 +365,7 @@
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
     "buttons_4AjX8g",
+    "heading_with_image_Dkrg9e",
     "heading_with_image_PX4WWY",
     "map_with_image_EiweJk",
     "popup_VRGXmN"
