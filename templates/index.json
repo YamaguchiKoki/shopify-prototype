@@ -145,66 +145,8 @@
         "padding_bottom": 24
       }
     },
-    "multicolumn_K4imfJ": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_VeqRda": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
-            "title": "トイザらス",
-            "text": "",
-            "link_label": "コラボ商品一覧へ",
-            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=トイザらス"
-          }
-        },
-        "column_P4wGfX": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ski-resort-crowd.jpg",
-            "title": "キディランド",
-            "text": "",
-            "link_label": "コラボ商品一覧へ",
-            "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.collaboration_type=キディランド"
-          }
-        },
-        "column_KPMdLU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
-            "title": "コラボ",
-            "text": "",
-            "link_label": "コラボ商品一覧へ",
-            "link": "/collections/all?filter.p.m.custom.zodiac=獅子座"
-          }
-        }
-      },
-      "block_order": [
-        "column_VeqRda",
-        "column_P4wGfX",
-        "column_KPMdLU"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "コラボ商品",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "shopify://collections/all",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection_EKPx6z": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "コラボ商品",
       "settings": {
         "collection": "コラボ商品",
@@ -328,11 +270,10 @@
       "name": "Heading with Image",
       "settings": {
         "heading": "支払い方法",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
-        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
-        "image_height": "small",
+        "image_height": "medium",
         "image_behavior": "none",
         "full_width": false,
         "color_scheme": "",
@@ -340,12 +281,32 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_Nq6YdM": {
+      "type": "image-banner",
+      "custom_css": [
+        "img {padding: 108px;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "map_with_image_EiweJk": {
       "type": "map-with-image",
       "name": "Map with Image",
       "settings": {
         "heading": "出店情報",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
         "map_url": "<div class=\"popup-store-section\">\n  <h2 class=\"popup-store-title\">ポップアップストア</h2>\n  <div class=\"gmap-iframe-wrap\">\n    <iframe class=\"gmap-iframe\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.627135224153!2d139.8107004!3d35.7100627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1694072572128!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n  </div>\n</div>\n\n<style>\n.popup-store-section {\n  padding: 40px 0;\n}\n\n.popup-store-title {\n  text-align: center;\n  margin-bottom: 24px;\n  font-size: 24px;\n}\n\n.gmap-iframe-wrap {\n  text-align: center;\n}\n\n.gmap-iframe {\n  width: 60%;\n  height: 450px;\n}\n\n@media only screen and (max-width: 767px) {\n  .popup-store-title {\n    font-size: 20px;\n  }\n  \n  .gmap-iframe {\n    width: 85%;\n    height: 350px;\n  }\n}\n</style>",
@@ -364,12 +325,12 @@
     "video_grid_jEabEN",
     "hero-slideshow",
     "all-products",
-    "multicolumn_K4imfJ",
     "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
     "buttons_4AjX8g",
     "heading_with_image_PX4WWY",
+    "image_banner_Nq6YdM",
     "map_with_image_EiweJk"
   ]
 }

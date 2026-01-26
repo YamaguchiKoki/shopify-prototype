@@ -1,0 +1,114 @@
+{{ 'section-popup.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  #popup-{{ section.id }} .popup-container {
+    --popup-max-width: {{ section.settings.max_width }}px;
+  }
+{%- endstyle -%}
+
+{%- if section.settings.enable_popup -%}
+  <div
+    class="popup-overlay"
+    id="popup-{{ section.id }}"
+    data-popup-id="{{ section.id }}"
+    data-show-once="{{ section.settings.show_once }}"
+    data-popup-delay="{{ section.settings.popup_delay }}"
+  >
+    <div class="popup-container">
+      <button type="button" class="popup-close" aria-label="{{ 'accessibility.close' | t }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="popup-content">
+        {%- if section.settings.popup_image != blank -%}
+          {%- if section.settings.popup_link != blank -%}
+            <a href="{{ section.settings.popup_link }}" class="popup-image-link">
+              {{
+                section.settings.popup_image
+                | image_url: width: 1200
+                | image_tag: loading: 'lazy', class: 'popup-image', alt: section.settings.popup_image.alt | escape
+              }}
+            </a>
+          {%- else -%}
+            {{
+              section.settings.popup_image
+              | image_url: width: 1200
+              | image_tag: loading: 'lazy', class: 'popup-image', alt: section.settings.popup_image.alt | escape
+            }}
+          {%- endif -%}
+        {%- else -%}
+          <div class="popup-placeholder">
+            <p>{{ 'sections.popup.placeholder' | t }}</p>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "ポップアップ",
+  "tag": "section",
+  "class": "section-popup",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_popup",
+      "label": "ポップアップを有効にする",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_once",
+      "label": "初回訪問時のみ表示",
+      "default": true,
+      "info": "チェックを入れると、ブラウザを閉じても再表示されません"
+    },
+    {
+      "type": "image_picker",
+      "id": "popup_image",
+      "label": "ポップアップ画像"
+    },
+    {
+      "type": "url",
+      "id": "popup_link",
+      "label": "画像のリンク先（任意）",
+      "info": "画像をクリック可能にする場合はURLを入力"
+    },
+    {
+      "type": "header",
+      "content": "表示設定"
+    },
+    {
+      "type": "range",
+      "id": "popup_delay",
+      "min": 0,
+      "max": 5000,
+      "step": 500,
+      "unit": "ms",
+      "label": "表示までの遅延時間",
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 300,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "label": "ポップアップの最大幅",
+      "default": 600
+    }
+  ],
+  "presets": [
+    {
+      "name": "ポップアップ"
+    }
+  ]
+}
+{% endschema %}

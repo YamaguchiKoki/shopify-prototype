@@ -385,6 +385,9 @@
     },
     "map_with_image": {
       "map_placeholder": "Google Mapを埋め込んでください"
+    },
+    "popup": {
+      "placeholder": "ポップアップ画像を設定してください"
     }
   },
   "localization": {
