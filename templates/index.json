@@ -202,37 +202,6 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_EKPx6z": {
-      "type": "featured-collection",
-      "name": "コラボ商品",
-      "settings": {
-        "collection": "コラボ商品",
-        "products_to_show": 4,
-        "title": "コラボ商品",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "subtitle",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "view_all_position": "header",
-        "view_all_border_radius": "8px",
-        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
-        "image_ratio": "adapt",
-        "image_shape": "rounded",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "featured_collection_gnKEKD": {
       "type": "featured-collection",
       "name": "新商品",
@@ -327,35 +296,16 @@
       "name": "Heading with Image",
       "settings": {
         "heading": "支払い方法",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "subheading": "",
         "text_alignment": "left",
+        "image": "shopify://shop_images/payment.webp",
         "image_height": "small",
         "image_behavior": "none",
         "full_width": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "image_banner_Nq6YdM": {
-      "type": "image-banner",
-      "custom_css": [
-        "img {padding: 108px;}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/saving-money-piggy-bank.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
       }
     },
     "map_with_image_EiweJk": {
@@ -383,12 +333,10 @@
     "hero-slideshow",
     "all-products",
     "multicolumn_ipF6T4",
-    "featured_collection_EKPx6z",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
     "buttons_4AjX8g",
     "heading_with_image_PX4WWY",
-    "image_banner_Nq6YdM",
     "map_with_image_EiweJk"
   ]
 }
