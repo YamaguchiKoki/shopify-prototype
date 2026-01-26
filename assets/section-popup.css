@@ -1,0 +1,125 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 2rem;
+}
+
+.popup-overlay.show {
+  display: flex;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+}
+
+.popup-container {
+  position: relative;
+  background-color: rgb(var(--color-background));
+  border-radius: var(--popup-corner-radius);
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  max-width: var(--popup-max-width, 600px);
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.popup-overlay.active .popup-container {
+  transform: scale(1);
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.popup-close:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: rotate(90deg);
+}
+
+.popup-close svg {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(var(--color-foreground));
+}
+
+.popup-content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.popup-image,
+.popup-image-link {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.popup-image {
+  object-fit: contain;
+}
+
+.popup-placeholder {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: rgba(var(--color-foreground), 0.5);
+}
+
+.popup-placeholder p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* スクロール防止 */
+body.popup-open {
+  overflow: hidden;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 749px) {
+  .popup-overlay {
+    padding: 1rem;
+  }
+
+  .popup-container {
+    max-height: 85vh;
+  }
+
+  .popup-close {
+    width: 3.6rem;
+    height: 3.6rem;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+
+  .popup-close svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
