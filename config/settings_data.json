@@ -114,7 +114,7 @@
     "social_instagram_link": "https://www.instagram.com/molynk.haus.jp/",
     "social_line_link": "https://line.me/R/ti/p/@youraccount",
     "social_youtube_link": "",
-    "social_tiktok_link": "",
+    "social_tiktok_link": "https://line.me/R/ti/p/@youraccount",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -140,6 +140,16 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "scheme-1"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "enable_popup": false,
+          "show_once": true,
+          "popup_link": "",
+          "popup_delay": 1000,
+          "max_width": 600
         }
       }
     },
