@@ -73,7 +73,7 @@
       ],
       "name": "出店情報１",
       "settings": {
-        "image": "shopify://shop_images/decorated-chinese-store-front.jpg",
+        "image": "shopify://shop_images/image-with-text-1500x1000.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -112,7 +112,7 @@
       ],
       "name": "出店情報２",
       "settings": {
-        "image": "shopify://shop_images/light-bulbs-in-the-grocery-store.jpg",
+        "image": "shopify://shop_images/image-with-text-1500x1000.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -151,7 +151,7 @@
       ],
       "name": "出店情報3",
       "settings": {
-        "image": "shopify://shop_images/light-bulbs-in-the-grocery-store.jpg",
+        "image": "shopify://shop_images/image-with-text-1500x1000.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
