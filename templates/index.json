@@ -27,7 +27,7 @@
       "block_order": [
         "video_E3hwrX"
       ],
-      "name": "Video Grid - Background",
+      "name": "ヒーロー動画",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -38,81 +38,6 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "hero-slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-0": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-right",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_N3Gxpq": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-right",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_8UyG7T": {
-          "type": "slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-right",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        }
-      },
-      "block_order": [
-        "slide-0",
-        "slide_N3Gxpq",
-        "slide_8UyG7T"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "div {margin-top: 24px; border: none;}"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "small",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "ブランドについてのスライドショー"
       }
     },
     "all-products": {
@@ -267,7 +192,7 @@
     },
     "buttons_4AjX8g": {
       "type": "buttons",
-      "name": "カスタムボタン",
+      "name": "商品一覧へボタン",
       "settings": {
         "link_label": "商品一覧へ",
         "link": "shopify://collections/all",
@@ -294,7 +219,7 @@
     },
     "heading_with_image_Dkrg9e": {
       "type": "heading-with-image",
-      "name": "Heading with Image",
+      "name": "支払い方法、送料規定",
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -305,24 +230,6 @@
         "image_behavior": "none",
         "full_width": true,
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "heading_with_image_PX4WWY": {
-      "type": "heading-with-image",
-      "disabled": true,
-      "name": "Heading with Image",
-      "settings": {
-        "heading": "支払い方法",
-        "heading_size": "h2",
-        "subheading": "",
-        "text_alignment": "left",
-        "image": "shopify://shop_images/payment.webp",
-        "image_height": "small",
-        "image_behavior": "none",
-        "full_width": false,
-        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -361,14 +268,12 @@
   },
   "order": [
     "video_grid_jEabEN",
-    "hero-slideshow",
     "all-products",
     "multicolumn_ipF6T4",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
     "buttons_4AjX8g",
     "heading_with_image_Dkrg9e",
-    "heading_with_image_PX4WWY",
     "map_with_image_EiweJk",
     "popup_VRGXmN"
   ]
