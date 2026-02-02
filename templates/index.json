@@ -329,7 +329,7 @@
     },
     "map_with_image_EiweJk": {
       "type": "map-with-image",
-      "name": "Map with Image",
+      "name": "出店情報",
       "settings": {
         "heading": "出店情報",
         "heading_size": "h1",
