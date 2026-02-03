@@ -195,6 +195,60 @@
     "multicolumn_kwYExx": {
       "type": "multicolumn",
       "blocks": {
+        "column_YFNiA8": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FxbhwF": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mfH4hT": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WRNLnN": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JA6fqB": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qytLNN": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_RirM6k": {
           "type": "column",
           "settings": {
@@ -251,6 +305,12 @@
         }
       },
       "block_order": [
+        "column_YFNiA8",
+        "column_FxbhwF",
+        "column_mfH4hT",
+        "column_WRNLnN",
+        "column_JA6fqB",
+        "column_qytLNN",
         "column_RirM6k",
         "column_JHW7it",
         "column_Fnkg4q",
@@ -267,8 +327,8 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
+        "enable_desktop_slider": true,
+        "full_width": true,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
