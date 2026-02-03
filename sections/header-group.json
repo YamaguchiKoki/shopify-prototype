@@ -43,7 +43,7 @@
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "always",
+        "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
         "color_scheme": "scheme-610e2fd6-c17f-4595-b604-4309294f74ed",
         "menu_color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
@@ -51,8 +51,8 @@
         "enable_language_selector": true,
         "enable_customer_avatar": true,
         "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
