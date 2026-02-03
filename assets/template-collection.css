@@ -123,7 +123,7 @@
   }
 
   .collection--full-width .collection__title:not(.page-width) {
-    padding: 0 5rem;
+    padding: 0 1.5rem;
   }
 }
 
