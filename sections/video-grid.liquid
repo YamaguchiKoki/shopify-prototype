@@ -27,7 +27,7 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="video-grid-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+  <div class="video-grid-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding{% if section.settings.full_height %} video-grid-section--full-height{% endif %}">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
@@ -278,6 +278,13 @@
       "id": "full_width",
       "label": "全幅表示",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_height",
+      "label": "フルスクリーン（100vh - ヘッダー）",
+      "default": false,
+      "info": "全幅表示と組み合わせて、ヘッダーを除いた画面全体の高さにします"
     },
     {
       "type": "color_scheme",
