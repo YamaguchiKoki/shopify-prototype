@@ -8,7 +8,7 @@ slider-component {
 }
 
 slider-component.slider-component-full-width {
-  --desktop-margin-left-first-item: 1.5rem;
+  --desktop-margin-left-first-item: 2.5rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -168,17 +168,17 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop {
-    scroll-padding-left: 1.5rem;
+    scroll-padding-left: 2.5rem;
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
-    scroll-margin-left: 1.5rem;
+    margin-left: 2.5rem;
+    scroll-margin-left: 2.5rem;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
   .slider-component-full-width .slider--desktop:after {
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
   }
 
   .slider--desktop.grid--5-col-desktop .grid__item {

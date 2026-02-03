@@ -118,8 +118,13 @@
   }
 
   .collection--full-width slider-component:not(.slider-component-desktop) {
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     max-width: none;
+  }
+
+  .collection--full-width .collection__title.page-width {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
