@@ -233,7 +233,12 @@
   }
 
   .multicolumn slider-component.slider-component-full-width .multicolumn-list {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .multicolumn .multicolumn__title.page-width {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
