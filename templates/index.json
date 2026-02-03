@@ -181,7 +181,92 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "full_width": true,
+        "full_width": false,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_kwYExx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RirM6k": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JHW7it": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Fnkg4q": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RtWejD": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UNaFx9": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cUbzCC": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RirM6k",
+        "column_JHW7it",
+        "column_Fnkg4q",
+        "column_RtWejD",
+        "column_UNaFx9",
+        "column_cUbzCC"
+      ],
+      "name": "星座",
+      "settings": {
+        "title": "星座",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "full_width": false,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
@@ -273,6 +358,7 @@
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
     "multicolumn_ipF6T4",
+    "multicolumn_kwYExx",
     "buttons_4AjX8g",
     "heading_with_image_Dkrg9e",
     "map_with_image_EiweJk",
