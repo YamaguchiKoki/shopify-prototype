@@ -181,6 +181,7 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
+        "full_width": true,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
