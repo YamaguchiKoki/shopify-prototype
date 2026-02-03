@@ -123,14 +123,16 @@
   }
 
   .collection--full-width .collection__title {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
   }
 }
 
-.collection--full-width .collection__title:not(.title-wrapper--self-padded-tablet-down) {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+@media screen and (max-width: 989px) {
+  .collection--full-width .collection__title {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
 }
 
 .collection__view-all a:not(.link) {
