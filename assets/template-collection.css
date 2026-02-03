@@ -122,10 +122,15 @@
     max-width: none;
   }
 
-  .collection--full-width .collection__title.page-width {
+  .collection--full-width .collection__title:not(.page-width) {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
+
+.collection--full-width .collection__title:not(.page-width):not(.title-wrapper--self-padded-tablet-down) {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .collection__view-all a:not(.link) {
