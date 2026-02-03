@@ -121,15 +121,6 @@
     padding: 0 1.5rem;
     max-width: none;
   }
-
-  .collection--full-width .collection__title:not(.page-width) {
-    padding: 0 1.5rem;
-  }
-}
-
-.collection--full-width .collection__title:not(.page-width):not(.title-wrapper--self-padded-tablet-down) {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .collection__view-all a:not(.link) {
