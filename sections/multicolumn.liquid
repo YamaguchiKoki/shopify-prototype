@@ -25,13 +25,13 @@
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
-    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="section-{{ section.id }}-padding isolate{% unless section.settings.full_width %} page-width{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title{% if section.settings.full_width %} page-width{% endif %}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
@@ -42,7 +42,7 @@
         {%- endif -%}
       </div>
     {%- endunless -%}
-    <slider-component class="slider-mobile-gutter">
+    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}">
       <ul
         class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
@@ -173,7 +173,7 @@
         </div>
       {%- endif -%}
     </slider-component>
-    <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
+    <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}{% if section.settings.full_width %} page-width{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
           class="button button--primary"
@@ -300,7 +300,7 @@
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_layout.content"
-    },     
+    },
     {
       "type": "range",
       "id": "columns_desktop",
@@ -309,6 +309,12 @@
       "step": 1,
       "default": 3,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.featured-collection.settings.full_width.label",
+      "default": false
     },
     {
       "type": "select",
