@@ -110,7 +110,7 @@
         "column_6NK6tV",
         "column_ijWAYt"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "コラボ商品",
       "settings": {
         "title": "コラボ商品",
         "heading_size": "h2",
@@ -141,7 +141,7 @@
         "description_style": "subtitle",
         "columns_desktop": 4,
         "enable_desktop_slider": false,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "outline",
         "view_all_position": "header",
@@ -172,7 +172,7 @@
         "description_style": "subtitle",
         "columns_desktop": 4,
         "enable_desktop_slider": false,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "outline",
         "view_all_position": "header",
@@ -269,9 +269,9 @@
   "order": [
     "video_grid_jEabEN",
     "all-products",
-    "multicolumn_ipF6T4",
     "featured_collection_gnKEKD",
     "featured_collection_L7fkYj",
+    "multicolumn_ipF6T4",
     "buttons_4AjX8g",
     "heading_with_image_Dkrg9e",
     "map_with_image_EiweJk",
