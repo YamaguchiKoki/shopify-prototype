@@ -185,7 +185,7 @@
         "background_style": "primary",
         "color_scheme": "scheme-62857740-ef7a-45ec-ad98-d903a64439a6",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
