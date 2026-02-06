@@ -380,6 +380,9 @@
     },
     "heading_with_image_Dkrg9e": {
       "type": "heading-with-image",
+      "custom_css": [
+        "img {object-fit: contain;}"
+      ],
       "name": "支払い方法、送料規定",
       "settings": {
         "heading": "",
@@ -387,7 +390,7 @@
         "subheading": "",
         "text_alignment": "center",
         "image": "shopify://shop_images/02.jpg",
-        "image_height": "large",
+        "image_height": "adapt",
         "image_behavior": "none",
         "full_width": true,
         "color_scheme": "",
