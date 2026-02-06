@@ -182,7 +182,7 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "full_width": true,
         "column_alignment": "left",
         "background_style": "primary",
