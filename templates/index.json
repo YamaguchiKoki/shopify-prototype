@@ -199,6 +199,7 @@
         "column_YFNiA8": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "牡羊座",
             "text": "",
             "link_label": "一覧へ",
@@ -208,8 +209,9 @@
         "column_FxbhwF": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "牡牛座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": ""
           }
@@ -217,8 +219,9 @@
         "column_mfH4hT": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "双子座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=双子座"
           }
@@ -226,8 +229,9 @@
         "column_WRNLnN": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "蟹座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=蟹座"
           }
@@ -235,8 +239,9 @@
         "column_JA6fqB": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "獅子座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=獅子座"
           }
@@ -244,8 +249,9 @@
         "column_qytLNN": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "乙女座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=乙女座"
           }
@@ -253,8 +259,9 @@
         "column_RirM6k": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "天秤座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=天秤座"
           }
@@ -262,8 +269,9 @@
         "column_JHW7it": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "蠍座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=蠍座"
           }
@@ -271,8 +279,9 @@
         "column_Fnkg4q": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "射手座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=射手座"
           }
@@ -280,8 +289,9 @@
         "column_RtWejD": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "山羊座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=山羊座"
           }
@@ -289,8 +299,9 @@
         "column_UNaFx9": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "水瓶座",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "text": "",
             "link_label": "一覧へ",
             "link": "/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.zodiac=水瓶座"
           }
@@ -298,6 +309,7 @@
         "column_cUbzCC": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/robot-standing-in-dark.jpg",
             "title": "魚座",
             "text": "",
             "link_label": "一覧へ",
