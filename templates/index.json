@@ -400,6 +400,7 @@
     },
     "map_with_image_EiweJk": {
       "type": "map-with-image",
+      "disabled": true,
       "name": "出店情報",
       "settings": {
         "heading": "出店情報",
@@ -428,6 +429,22 @@
         "popup_delay": 1000,
         "max_width": 650
       }
+    },
+    "heading_with_image_wGkTNa": {
+      "type": "heading-with-image",
+      "name": "Heading with Image",
+      "settings": {
+        "heading": "出店情報",
+        "heading_size": "h1",
+        "subheading": "",
+        "text_alignment": "left",
+        "image_height": "medium",
+        "image_behavior": "none",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -440,6 +457,7 @@
     "buttons_4AjX8g",
     "heading_with_image_Dkrg9e",
     "map_with_image_EiweJk",
-    "popup_VRGXmN"
+    "popup_VRGXmN",
+    "heading_with_image_wGkTNa"
   ]
 }
