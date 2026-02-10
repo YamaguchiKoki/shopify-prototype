@@ -228,7 +228,6 @@
         },
         "column_WRNLnN": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/7838f0ad9b91128bfa4a88d25259ebc6.webp",
             "title": "蟹座",
