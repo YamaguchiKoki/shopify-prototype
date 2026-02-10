@@ -434,7 +434,7 @@
       "type": "heading-with-image",
       "name": "Heading with Image",
       "settings": {
-        "heading": "",
+        "heading": "出店情報",
         "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
@@ -443,8 +443,8 @@
         "image_behavior": "none",
         "full_width": true,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 12,
+        "padding_bottom": 16
       }
     }
   },
