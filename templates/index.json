@@ -438,6 +438,7 @@
         "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
+        "image": "shopify://shop_images/03.jpg",
         "image_height": "medium",
         "image_behavior": "none",
         "full_width": true,
