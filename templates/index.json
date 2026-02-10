@@ -137,15 +137,6 @@
     "multicolumn_ipF6T4": {
       "type": "multicolumn",
       "blocks": {
-        "column_wbHrdU": {
-          "type": "column",
-          "settings": {
-            "title": "列",
-            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_xzRcTq": {
           "type": "column",
           "settings": {
@@ -178,7 +169,6 @@
         }
       },
       "block_order": [
-        "column_wbHrdU",
         "column_xzRcTq",
         "column_6NK6tV",
         "column_ijWAYt"
