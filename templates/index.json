@@ -434,7 +434,7 @@
       "type": "heading-with-image",
       "name": "Heading with Image",
       "settings": {
-        "heading": "出店情報",
+        "heading": "",
         "heading_size": "h1",
         "subheading": "",
         "text_alignment": "left",
