@@ -385,10 +385,10 @@
       ],
       "name": "支払い方法、送料規定",
       "settings": {
-        "heading": "",
-        "heading_size": "h2",
+        "heading": "支払い方法",
+        "heading_size": "h1",
         "subheading": "",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "image": "shopify://shop_images/02.jpg",
         "image_height": "adapt",
         "image_behavior": "none",
