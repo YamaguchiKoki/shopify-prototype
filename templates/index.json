@@ -439,7 +439,7 @@
         "subheading": "",
         "text_alignment": "left",
         "image": "shopify://shop_images/03.jpg",
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "none",
         "full_width": true,
         "color_scheme": "",
