@@ -228,6 +228,7 @@
         },
         "column_WRNLnN": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/7838f0ad9b91128bfa4a88d25259ebc6.webp",
             "title": "蟹座",
@@ -238,6 +239,7 @@
         },
         "column_JA6fqB": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1f8e9b2d8453bc7a77a22f032fba5b4f.jpg",
             "title": "獅子座",
@@ -248,6 +250,7 @@
         },
         "column_qytLNN": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/135ec1f808ccb6f29b90fccc4376d16e.webp",
             "title": "乙女座",
@@ -258,6 +261,7 @@
         },
         "column_RirM6k": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/531d397339e47dd214dbdcb171d864bf.jpg",
             "title": "天秤座",
@@ -268,6 +272,7 @@
         },
         "column_JHW7it": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/be68c201623a2fd45bce5a1c2cda271e.webp",
             "title": "蠍座",
@@ -278,6 +283,7 @@
         },
         "column_Fnkg4q": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/5300d658f42838cfd8ecf939d4e71b34.jpg",
             "title": "射手座",
@@ -288,6 +294,7 @@
         },
         "column_RtWejD": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/b3bb9ab55f453bf59815bfb7a98be6a4.jpg",
             "title": "山羊座",
@@ -298,6 +305,7 @@
         },
         "column_UNaFx9": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/52243ee1e75baca0d1412c4fb9114fe8.jpg",
             "title": "水瓶座",
@@ -308,6 +316,7 @@
         },
         "column_cUbzCC": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/17845cd0ec556d53ed88587504f053f2.jpg",
             "title": "魚座",
