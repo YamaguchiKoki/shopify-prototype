@@ -25,7 +25,7 @@
           "settings": {
             "image": "shopify://shop_images/woman-poses-in-dark-room.jpg",
             "title": "会長",
-            "text": "",
+            "text": "<p>ここに説明を入れる</p>",
             "link_label": "",
             "link": ""
           }
@@ -35,7 +35,7 @@
           "settings": {
             "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
             "title": "社長",
-            "text": "",
+            "text": "<p>ここに説明を入れる</p>",
             "link_label": "",
             "link": ""
           }
@@ -80,23 +80,103 @@
           "settings": {
             "text": "<h2><em>沐牧(モクマキ)</em></h2><p>沐牧株式会社は、2023年に設立された、クリエイティブなライフスタイルブランドの会社です。<br/>毎日の暮らしの中で、ふと心がゆるむような、気持ちに寄り添うデザインを大切にしたブランドを<br/>日本の皆様へお届けしています。<br/>現在は、スクイートイブランドMOLYNK HAUS(モーリーハウス)の日本公式パートナーとして、商<br/>品の輸入・販売・プロモーションを行なっています。<br/>「長く好きでいられるものには、理由がある。」<br/>沐牧株式会社ではこの思いを軸に、気持ち・デザイン・文化がやさしくつながるブランドを大切に<br/>育てていきます。</p>"
           }
-        },
-        "button_xRnUbG": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_YWYYpp",
-        "text_DBRYmy",
-        "button_xRnUbG"
+        "text_DBRYmy"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_Ck98eK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rH46zz": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>MOLYNKHAUS(モリーハウス)</h2><h3>ブランドコンセプト</h3><p>MOLYNKは、やわらかな触り心地を大切にしたスクイーズトイブランドです。<br/>「Love the world with tenderness」を理念に、触れることのできるやわらかな体験を通して、日常<br/>にリラックスや寄り添いの時間を届けたいと考えています。<br/>ブランド立ち上げ当初より、MOLYNKはスクイーズ商品のデザインと開発に注力し、<br/>「ぷにぷにパン屋さん」シリーズを代表とするコアプロダクトラインを確立してきました。<br/>スクイーズを、単なるストレス解消アイテムから、感情や物語を宿すクリエイティブな存在へと広<br/>げています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_rH46zz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_UVntwy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8CGiXN": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>IPコラボレーション</h2><p>MOLYNKはこれまでに、Disney(ディズニー) をはじめとする、世界的に親しまれている複数の<br/>著名IPとコラボレーションを行ってきました。<br/>キャラクターの持つ物語や魅力とMOLYNKならではの優しい触感を組み合わせる事で、見ても<br/>触れても心が暖かくなるようなアイテムをお届けしております。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_8CGiXN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_xKWPJG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6wGhfL": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>製品の安全性と素材</h2><p>MOLYNKは、製品の素材と安全性において高い基準を設けています。<br/>すべての製品には、複数の検査をクリアした環境配慮型素材を使用し、SGSによる無毒検査認<br/>証を取得し、<br/>お子さまにも安心してお使いいただける安全性を確保しています。<br/>また、製造から検品、出荷に至るまで、業界トップレベルの品質管理体制を構築し、毎日手にとっ<br/>ても安心できるものづくりを心がけています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_6wGhfL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_HckLE4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jpDWD7": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>空間体験とブランドの広がり<br/></h2><p>2024年以降、MOLYNKはブランド表現をリアルな空間へと広げ、テーマ性のあるポップアップや<br/>体験型の演出を通して、製品と空間の感情的なつながりを探求しています。<br/>2025年11月には、日本市場へ本格進出し、神戸OIOI(神戸マルイ) にてブランドポップアップスト<br/>アを開催しました。<br/>やわらかな触感とブランドの世界観を、実際に体感できる場として展開しています。<br/>実際に見て、触れて、ゆっくり過ごす。MOLYNKはこれからも「やわらかさ」が持つ癒しを体験とし<br/>てお届けしていきます。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_jpDWD7"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -112,6 +192,10 @@
   "order": [
     "main",
     "multicolumn_ifjYrY",
-    "rich_text_y8JtYr"
+    "rich_text_y8JtYr",
+    "rich_text_Ck98eK",
+    "rich_text_UVntwy",
+    "rich_text_xKWPJG",
+    "rich_text_HckLE4"
   ]
 }
