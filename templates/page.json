@@ -187,6 +187,37 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "video_grid_W4nmaW": {
+      "type": "video-grid",
+      "blocks": {
+        "video_3LLbn7": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "description": "",
+            "video_url": "https://youtu.be/N0QAdS2WPVg?si=FGXG7rXuKoauGA0R",
+            "immersive_mode": true,
+            "enable_video_looping": true
+          }
+        }
+      },
+      "block_order": [
+        "video_3LLbn7"
+      ],
+      "name": "Video Grid",
+      "settings": {
+        "heading": "Brand View",
+        "heading_size": "h1",
+        "columns_desktop": 1,
+        "columns_mobile": "1",
+        "grid_gap": 32,
+        "full_width": false,
+        "full_height": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -196,6 +227,7 @@
     "rich_text_Ck98eK",
     "rich_text_UVntwy",
     "rich_text_xKWPJG",
-    "rich_text_HckLE4"
+    "rich_text_HckLE4",
+    "video_grid_W4nmaW"
   ]
 }
