@@ -22,6 +22,7 @@
       "blocks": {
         "column_wGEMTm": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/woman-poses-in-dark-room.jpg",
             "title": "会長",
@@ -32,6 +33,7 @@
         },
         "column_AKgjFc": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
             "title": "社長",
@@ -45,6 +47,7 @@
         "column_wGEMTm",
         "column_AKgjFc"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
