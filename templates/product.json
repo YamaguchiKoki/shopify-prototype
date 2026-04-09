@@ -158,6 +158,7 @@
     },
     "video_NNGzyX": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "動画",
